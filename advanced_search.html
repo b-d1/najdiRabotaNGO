@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Search</title>
+
+</head>
+<body>
+
+
+
+
+    <div class="advanced_search_dialog">
+        <!--Search Filters-->
+        <div class="filter_results">
+            <input type="text" id="search_country">
+            <input type="button" id="search_button" value="Пребарај">
+
+            <br>
+            <br>
+            <!--Filters-->
+            <select class="search_choose_city">
+                <option></option>
+                <!--Options added based on country-->
+            </select>
+
+            <select class="search_choose_category">
+                <option>
+
+                </option>
+                <option id="Housekeeper" value="Housekeeper">
+                    Housekeeper
+                </option>
+                <option id="Hostess" value="Hostess">
+                    Hostess
+                </option>
+                <option id="Waiter" value="Waiter">
+                    Waiter
+                </option>
+                <option id="Electrician" value="Electrician">
+                    Electrician
+                </option>
+                <option id="Maintenance" value="Maintenance">
+                    Maintenance
+                </option>
+                <option id="Babysitter" value="Babysitter">
+                    Babysitter
+                </option>
+                <option id="Mechanic" value="Mechanic">
+                    Mechanic
+                </option>
+
+            </select>
+
+
+        </div>
+
+
+        <!--Results-->
+        <div class="show_results">
+
+            <!--Results Items-->
+            <div class="results_item">
+                <h3 class="result_title">Title 1  <span class="stars"></span> </h3>
+                <hr class="line_divide_jobs">
+                <p class="description">This is a test job</p>
+                <br>
+                <input type="button" value="Аплицирај" tag="jobtag">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
