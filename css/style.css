@@ -1,5 +1,10 @@
 /* Custom Search */
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+}
+
 .input-search {
     display: inline-block;
     width: 80%;
@@ -14,8 +19,11 @@
 
 .home-search-area {
     margin-top:150px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:300 !important;
 }
 
 .main-navbar {
-    float:right;
+    float:right !important;
 }
