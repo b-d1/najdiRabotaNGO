@@ -1,0 +1,21 @@
+/* Custom Search */
+
+.input-search {
+    display: inline-block;
+    width: 80%;
+    float: left;
+    margin-right: 10px;
+}
+
+.hero-area {
+    height: 600px;
+    background-color: lightblue;
+}
+
+.home-search-area {
+    margin-top:150px;
+}
+
+.main-navbar {
+    float:right;
+}
