@@ -1,0 +1,124 @@
+{
+  "jobs":[
+    {
+      "jobId":"01",
+      "country":"Germany",
+      "city":"Berlin",
+      "title":"Hostess",
+      "employer":"Hotel Mariott",
+      "description":"As a hostess you'll be responsible for many things. You'll need to cheerfully greet guests, take them to their table and provide them with silverware and a menu. You'll need to be able to monitor the table rotation and make sure that each member of the wait staff gets a fair amount of tables without giving them too many all at once. At the same time, you'll need to know which servers you can count on to take extra tables when you get slammed with customers. You'll also need to keep track of which tables are cleaned and available for new guests, and you may even be required to answer the phone, take reservations and in some cases take-out orders.",
+      "salary":"15$/hour",
+      "working_hours":"10hrs/day, 5 days a week",
+      "time":"2 months",
+      "documents":[
+        {"doc":"Working Visa"},
+        {"doc":"Valid Passport"}
+      ]
+    },
+    {
+      "jobId":"02",
+      "country":"England",
+      "city":"Manchester",
+      "title":"Housekeeper",
+      "employer":"Resort and Spa JONES",
+      "description":"We are looking for someone to help us with laundry, groceries, pet walking, and odd jobs around our home. I would expect you here about five hours each week, between the hours of 9:00 a.m. and 3:00 p.m. preferably on Mondays though I'm open to Tuesdays as well. Your tasks would include: * Folding and putting away laundry every week as well as straighten up clothes/towels in drawers as you go (2-3 hours) - if you do not enjoy folding and putting away laundry please do NOT apply - we will have 6 large loads each week * Walking our two dogs (1 hour) each day * Odd jobs - organization around house for closets, dressers, kids' playroom * Grocery shopping, mailing packages, and other errands as needed within three miles of home (1. 5 hours) * Watering the plants (0. 5 hours) We look forward to working with you!",
+      "salary":"10$/hour",
+      "working_hours":"9hrs/day, 6 days a week",
+      "time":"1-3 months",
+      "documents":[
+        {"doc":"Working Visa"},
+        {"doc":"Valid Passport"},
+        {"doc":"Hotel reservation"}
+      ]
+    },
+    {
+      "jobId":"03",
+      "country":"Austria",
+      "city":"Vienna",
+      "title":"Waiter",
+      "employer":"Restaurant Agimi",
+      "description":"Ensure that all guests are served to the hotels standard in the Restaurant / Bar / Lounge areas. Display highest standards of hospitality and welcome are demonstrated at all times within all food and beverage areas.Takes orders for, serves (where applicable, prepares) food and beverages to guests as per the hotels standards in a friendly, timely and efficient manner.",
+      "salary":"25$/hour",
+      "working_hours":"15hrs/day, 5 days a week",
+      "time":"2 months",
+      "documents":[
+        {"doc":"Working Visa"},
+        {"doc":"Valid Passport"}
+      ]
+    },
+    {
+      "jobId":"04",
+      "country":"Germany",
+      "city":"Munich",
+      "title":"Electrician",
+      "employer":"Construction DETEL",
+      "description":"Install, maintain, and repair electrical power, communications, lighting, and control systems in homes, businesses, and factories.",
+      "salary":"20$/hour",
+      "working_hours":"On demand, 7 days a week",
+      "time":"2-3 months",
+      "documents":[
+        {"doc":"Working Visa"},
+        {"doc":"Valid Passport"}
+      ]
+    },
+    {
+      "jobId":"05",
+      "country":"England",
+      "city":"London",
+      "title":"Maintenance",
+      "employer":"Construction DETEL",
+      "description":"Maintain, and repair electrical power, communications, lighting, and control systems in homes, businesses, and factories.",
+      "salary":"20$/hour",
+      "working_hours":"On demand, 7 days a week",
+      "time":"2-3 months",
+      "documents":[
+        {"doc":"Working Visa"},
+        {"doc":"Valid Passport"}
+      ]
+    },
+    {
+      "jobId":"06",
+      "country":"Germany",
+      "city":"Berlin",
+      "title":"Babysitter",
+      "employer":"Jelena Shwain",
+      "description":"I want someone careful enough to watch at my baby while I am at work. I need someone that can stay at home for 9 hours a day, and take great care of my baby! Thanks",
+      "salary":"23$/hour",
+      "working_hours":"8-17, 7 days a week",
+      "time":"5 months",
+      "documents":[
+        {"doc":"Valid Passport"}
+      ]
+    },
+    {
+      "jobId":"07",
+      "country":"Spain",
+      "city":"Barcelona",
+      "title":"Babysitter",
+      "employer":"Natalia Messer",
+      "description":"I want someone careful enough to watch at my baby while I am at work. I need someone that can stay at home for 9 hours a day, and take great care of my baby! Thanks",
+      "salary":"40$/hour",
+      "working_hours":"8-17, 7 days a week",
+      "time":"2 months",
+      "documents":[
+        {"doc":"Valid Passport"}
+      ]
+    },
+    {
+      "jobId":"08",
+      "country":"England",
+      "city":"London",
+      "title":"Mechanic",
+      "employer":"John Wayne",
+      "description":"I need an accomplice to help me on fixing cars and car parts!",
+      "salary":"30% of profit",
+      "working_hours":"10-20, 6 days a week",
+      "time":"2-5 months",
+      "documents":[
+        {"doc":"Valid Passport"}
+      ]
+    }
+  ]
+
+
+}
