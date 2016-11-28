@@ -19,3 +19,38 @@
 .main-navbar {
     float:right;
 }
+
+
+/* Advanced search */
+.advanced_search_dialog{
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 10%;
+    padding: 3% 2%;
+    background-color: lightgray;
+}
+
+.show_results{
+    margin-top:1%;;
+    padding: .5%;
+    background-color: white;
+}
+
+.filter_results{
+
+}
+
+#search_country{
+    height:40px;
+    width: 40%;
+    border: 1px solid gray;
+    border-top-left-radius: 19px;
+    border-bottom-left-radius: 19px;
+}
+#search_button{
+    margin-left: 0;
+    height: 40px;
+
+}
