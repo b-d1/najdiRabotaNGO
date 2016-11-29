@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <title></title>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="col-xs-10 col-sm-8 col-md-6 col-lg-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-3 col-lg-offset-3">
+
+                <form class="form-horizontal">
+
+                    <div class="form-group">
+
+                        <label for="name" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Име:</label>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <input type="text" class="form-control" id="name"/>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="lname" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Презиме:</label>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <input type="text" class="form-control" id="lname"/>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">E-mail адреса:</label>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <input type="email" class="form-control" id="email"/>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="user" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Корисничко име:</label>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <input type="text" class="form-control" id="user"/>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="pass" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Лозинка:</label>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <input type="password" class="form-control" id="pass"/>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="rep-pass" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Повторете лозинка:</label>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <input type="password" class="form-control" id="rep-pass"/>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="dob" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Датум на раѓање:</label>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <input type="text" class="form-control" id="dob"/>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <button type="submit" class="btn btn-primary btn-block" id="register">
+
+                                Регистрирај се
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript">
+
+//            //DATEPICKER
+//            $('#dob').datepicker({a
+//                format: "dd MM yyyy",
+//                startView: "years",
+//                endDate: '-18y',
+//                startDate: '-100y',
+//                autoClose: true
+//            }).on('changeDate', function (ev) {
+//                $(this).datepicker('hide');
+//            });
+//
+//            //VALIDATION
+//            var valid=null;
+//            function validate(){
+//
+//            }
+
+            console.log(5);
+
+            $(document).ready(function() {
+                $('#register').click(function() {
+                    var $name=$('#name').val();
+                    console.log($name);
+                });
+            });
+
+
+
+
+        </script>
+
+    </body>
+
+</html>
