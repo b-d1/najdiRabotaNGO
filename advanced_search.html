@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" >
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"  />
+    <link rel="stylesheet" href="css/easy-autocomplete.min.css">
 
     <!--Scripts-->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/advanced_search.js"></script>
+    <script src="js/jquery.easy-autocomplete.min.js"></script>
 </head>
 <body>
 
@@ -21,20 +24,27 @@
     <div class="advanced_search_dialog">
         <!--Search Filters-->
         <div class="filter_results">
-            <input type="text" id="search_country">
-            <input type="button" id="search_button" value="Пребарај">
+                <div class="input-group advanced_search_form">
+                    <input type="text" class="form-control advanced_search_input" placeholder="baraj" value="England">
+                    <span class="input-group-btn" >
+                    <button class="btn btn-default advanced_search_button" type="button" >Пребарај!</button>
+                  </span>
+                </div><!-- /input-group -->
 
             <br>
             <br>
+
+
+
             <!--Filters-->
             <select class="search_choose_city">
-                <option></option>
                 <!--Options added based on country-->
             </select>
 
-            <select class="search_choose_category">
-                <option>
 
+            <select class="search_choose_category">
+                <option value="hide">
+                        Изберете категорија
                 </option>
                 <option id="Housekeeper" value="Housekeeper">
                     Housekeeper
@@ -63,19 +73,33 @@
 
         </div>
 
+        <hr class="split">
+        <div class="jobs_found">
+            <div class="found">
+                    <span class="success_message_found">
 
+                    </span>
+            </div>
+            <div class="not_found">
+                <span class="error_meesage_not_found"></span>
+
+            </div>
+
+        </div>
         <!--Results-->
         <div class="show_results">
 
-            <!--Results Items-->
-            <div class="results_item">
-                <h3 class="result_title">Title 1  <span class="stars"></span> </h3>
-                <hr class="line_divide_jobs">
-                <p class="description">This is a test job</p>
-                <br>
-                <input type="button" value="Аплицирај" tag="jobtag">
 
-            </div>
+
+            <!--Results Items-->
+           <!--<div class="results_item">-->
+                <!--<a href="#"><h3 class="result_title">Title 1  <span class="stars"> </span> </h3></a>-->
+                <!--<hr class="line_divide_jobs">-->
+                <!--<p class="description">This is a test job</p>-->
+                <!--<br>-->
+                <!--<input class="apply_button" type="button" value="Аплицирај" tag="jobtag">-->
+
+            <!--</div> -->
 
         </div>
 
