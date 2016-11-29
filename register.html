@@ -7,6 +7,7 @@
         <meta charset="UTF-8">
 
         <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-datepicker.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <title></title>
@@ -23,11 +24,23 @@
 
                     <div class="form-group">
 
-                        <label for="name" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Име и Презиме:</label>
+                        <label for="name" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Име:</label>
 
                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 
                             <input type="text" class="form-control" id="name"/>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="lname" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Презиме:</label>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <input type="text" class="form-control" id="lname"/>
 
                         </div>
 
@@ -83,18 +96,31 @@
 
                     <div class="form-group">
 
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+                        <label for="dob" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Датум на раѓање:</label>
 
-                        <!--col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4-->
-                        <button type="submit" class="btn btn-primary">
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 
-                            asfasd
+                            <input type="text" class="form-control" id="dob"/>
 
-                        </button>
+                        </div>
 
                     </div>
 
+                    <div class="row">
 
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <button type="submit" class="btn btn-primary btn-block" id="register">
+
+                                Регистрирај се
+
+                            </button>
+
+                        </div>
+
+                    </div>
 
 
                 </form>
@@ -103,11 +129,41 @@
 
         </div>
 
-
-        </div>
-
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript">
+
+//            //DATEPICKER
+//            $('#dob').datepicker({
+//                format: "dd MM yyyy",
+//                startView: "years",
+//                endDate: '-18y',
+//                startDate: '-100y',
+//                autoClose: true
+//            }).on('changeDate', function (ev) {
+//                $(this).datepicker('hide');
+//            });
+//
+//            //VALIDATION
+//            var valid=null;
+//            function validate(){
+//
+//            }
+
+            console.log(5);
+
+            $(document).ready(function() {
+                $('#register').click(function() {
+                    var $name=$('#name').val();
+                    console.log($name);
+                });
+            });
+
+
+
+
+        </script>
 
     </body>
 
