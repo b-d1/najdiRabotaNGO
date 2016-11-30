@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/style.css" type="text/css" >
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"  />
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/component.css">
+
+    <!--Scripts-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.easy-autocomplete.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jobs_object.js"></script>
+    <script src="js/display_job.js"></script>
+
+
+</head>
+<body>
+
+
+
+<!--main page-->
+<div class="container">
+    <div class="main_page_display_job">
+
+    </div>
+
+</div>
+
+<!--Popup dialog-->
+<div class="container apply_job">
+
+    <div class="apply_job_top">
+        <h4 class="apply-title">Аплицирај за работа</h4>
+        <hr>
+        <p>За да аплицирате за избраната работа мора да ги доставите потребните документи и да се согласите со условите за користење на страната!
+        Дополнително може да оставите ваше мотивационо писмо каде што ке објаснувате кои вештини ги поседувате и зашто мислите дека сте идеален кандидат за работата!</p>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Изберете ги потребните документи за да можете да аплицирате на избраната работа!</h4>
+        </div>
+        <div class="col-md-8">
+            <!--File uploads-->
+            <div class="box text-center">
+                <input style="display: none;" type="file" name="file-5[]" id="file-5" class="inputfile inputfile-4" data-multiple-caption="{count} files selected" multiple="">
+                <label for="file-5"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg></figure> <span>Изберете фајлови ...</span></label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Мотивацино писмо и вештини!</h4>
+        </div>
+        <div class="col-md-8">
+            <!--Comments-->
+            <div>
+                <textarea></textarea>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row text-center">
+        <input type="button" class="apply-button" value="Аплицирај">
+        <input type="button" class="apply-cancel-button" value="Откажи">
+    </div>
+
+</div>
+
+<script src="js/custom.js"></script>
+
+
+</body>
+</html>

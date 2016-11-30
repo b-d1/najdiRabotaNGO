@@ -1,0 +1,212 @@
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style 4 */
+.inputfile-4{
+    display: none;
+}
+.inputfile-4 + label {
+    color: #2aabd2;
+}
+
+.inputfile-4:focus + label,
+.inputfile-4.has-focus + label,
+.inputfile-4 + label:hover {
+    color: #2b669a;
+}
+
+.inputfile-4 + label figure {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #2aabd2;
+    display: block;
+    padding: 20px;
+    margin: 0 auto 10px;
+}
+
+.inputfile-4:focus + label figure,
+.inputfile-4.has-focus + label figure,
+.inputfile-4 + label:hover figure {
+    background-color: #2b669a;
+}
+
+.inputfile-4 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+
+
+/* style 5 */
+
+.inputfile-5 + label {
+    color: #d3394c;
+}
+
+.inputfile-5:focus + label,
+.inputfile-5.has-focus + label,
+.inputfile-5 + label:hover {
+    color: #2b669a;
+}
+
+.inputfile-5 + label figure {
+    width: 100px;
+    height: 135px;
+    background-color: #d3394c;
+    display: block;
+    position: relative;
+    padding: 30px;
+    margin: 0 auto 10px;
+}
+
+.inputfile-5:focus + label figure,
+.inputfile-5.has-focus + label figure,
+.inputfile-5 + label:hover figure {
+    background-color: #2b669a;
+}
+
+.inputfile-5 + label figure::before,
+.inputfile-5 + label figure::after {
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.inputfile-5 + label figure::before {
+    border-top: 20px solid #dfc8ca;
+    border-left: 20px solid transparent;
+}
+
+.inputfile-5 + label figure::after {
+    border-bottom: 20px solid #722040;
+    border-right: 20px solid transparent;
+}
+
+.inputfile-5:focus + label figure::after,
+.inputfile-5.has-focus + label figure::after,
+.inputfile-5 + label:hover figure::after {
+    border-bottom-color: #d3394c;
+}
+
+.inputfile-5 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #2b669a;
+}
+
+.box{
+    border: 2px solid lightgray;
+    padding: 50px 0;
+}
+
+.apply_job{
+    padding: 20px;
+    width: 43% !important;
+    margin-top:20px;
+    margin-bottom:20px;
+    border:2px solid lightgray;
+}
+
+.apply-title{
+    color:#2aabd2;
+    font-weight: bold;
+    font-size:25px;
+}
+.apply-button{
+    border: none;
+    background-color: #2aabd2;
+    width: 180px;
+    height:45px;
+    color: white;
+    font-size:25px;
+
+}
+.apply-button:hover{
+    background-color: #2b669a;
+}
+.apply-cancel-button{
+    border:2px solid #2aabd2;
+    background-color: white;
+    width: 180px;
+    height:45px;
+    color: #2aabd2;
+    font-size:25px;
+}
+.apply-cancel-button:hover{
+    color: #2b669a;
+    border:3px solid #2b669a;
+}
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 150px;
+}
+.blur{
+    -webkit-filter:blur(3px);
+    -moz-filter:blur(3px);
+}
+
+.main_page_display_job{
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.apply_job{
+     position: absolute;
+     top:-1500px;
+     left:30%;
+    background-color: white;
+ }
