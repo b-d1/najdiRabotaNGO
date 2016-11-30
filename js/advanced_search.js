@@ -2,17 +2,69 @@
  * Created by Nasi on 11/29/2016.
  */
 
-var categories = ["Housekeeper","Hostess","Waiter","Electrician","Maintenance","Babysitter","Mechanic"];
+//======================================//
+//=========Jobs Object Declaration======//
+//======================================//
+
+var categories = ["Чистачка","Хостеса","Келнер","Електричар","Одржување","Бејбиситер","Механичар"];
+
 var selectedCity = "";
 var selectedCategory = "";
 var selectedCountry = "";
 
+function check100Words(string){
+    var arr = string.split(" ");
+    console.log(arr.length);
+    if(arr.length>100){
+        //prikazi samo sto
+        arr = arr.slice(0,100);
+        arr = arr.join(" ");
+        return arr + " . . . <a href='#'>Прикажи повеќе</a>";
+    }
+    else{
+        return string;
+    }
+}
+
+//=========================================================//
+//=============Function to load data from json=============//
+//=========================================================//
+
+function render(jobId,title,city,working_hours,salary,description){
+    var appendingDiv = <!--Results Items-->
+        "<div class='results_item'>" +
+        "<a href='showJob?id=" + jobId + "'>" +
+        "<h3 class='result_title'>" + title + " </h3> </a>  <span class='stars'>" + city + "</span> "+
+        "<h5>" + salary + "  - " + working_hours + "</h5>"+
+        "<hr class='line_divide_jobs'> " +
+        "<p class='description'>" + check100Words(description) + "</p><br> " +
+        "<input class='apply_button' type='button' value='Аплицирај' tag='" + jobId + "'> </div>";
+    return appendingDiv;
+
+}
+
+//
+function showMore(){
+    return "<div class='show-more'>Прикажи повеќе!</div>"
+}
+
+
+
+
 function loadData(category,selcity){
-    $.getJSON( "json/jobs.json", function( data ) {
+
+   // $.getJSON( "json/jobs.json", function( data ) {
+        var data = Jobs;
+
+        selectedCity = selcity;
+        selectedCategory=category;
+        console.log(selcity + selectedCategory);
 
         $(".search_choose_city").empty();
         $(".search_choose_city").append("<option value='hide'> Изберете град</option>");
         var selectedcountry = $('.advanced_search_input').val();
+
+        console.log(selectedcountry);
 
         var jobs = data['jobs'];
         var cities = [];
@@ -40,33 +92,51 @@ function loadData(category,selcity){
                 }
 
                 if(category.length!=0){
-                    selectedCategory = category;
-                    selectedCity = selcity
-                    if(category==title){
-                        console.log("Equal")
-                        counter++;
-                        //append
-                        var appendingDiv =  <!--Results Items-->
-                            "<div class='results_item'><a href='showJob?id=" + jobId + "'><h3 class='result_title'>"  + title  + "  <span class='stars'>" + city  + "</span> </h3></a> <hr class='line_divide_jobs'> <p class='description'>" + description  + "</p><br> <input class='apply_button' type='button' value='Аплицирај' tag='" + jobId +  "'> </div>"
+                    if(category==title) {
+                        if (selectedCity.length != 0) {
+                            if (selectedCity == city) {
+                                console.log("Equal")
+                                counter++;
+                                //append
+                                var appendingDiv = render(jobId,title,city,working_hours,salary,description);
 
-                        $(".show_results").append(appendingDiv);
+                                $(".show_results").append(appendingDiv);
+                            }
+                        }
+                        else{
+                            console.log("Equal")
+                            counter++;
+                            //append
+                            var appendingDiv = render(jobId,title,city,working_hours,salary,description);
+
+                            $(".show_results").append(appendingDiv);
+                        }
                     }
                     else{
                         $(".error_meesage_not_found").show();
                     }
                 }
                 else{
-                    console.log("0")
-                    counter++;
-                    //append
-                    var appendingDiv =  <!--Results Items-->
-                        "<div class='results_item'><a href='showJob?id=" + jobId + "'><h3 class='result_title'>"  + title  + "  <span class='stars'>" + city  + "</span> </h3></a> <hr class='line_divide_jobs'> <p class='description'>" + description  + "</p><br> <input class='apply_button' type='button' value='Аплицирај' tag='" + jobId +  "'> </div>"
-
-                    $(".show_results").append(appendingDiv);
+                    if(selectedCity.length !=0 )
+                    {
+                        if(selectedCity == city) {
+                            console.log("We are in");
+                            counter++;
+                            //append
+                            var appendingDiv = render(jobId,title,city,working_hours,salary,description);
+                            $(".show_results").append(appendingDiv);
+                        }
+                    }
+                    else{
+                        console.log("We are in");
+                        counter++;
+                        //append
+                        var appendingDiv = render(jobId,title,city,working_hours,salary,description);
+                        $(".show_results").append(appendingDiv);
+                    }
                 }
             }
         }
-
 
         $(".select-styled").hide();
         $(".select-options").hide();
@@ -93,27 +163,34 @@ function loadData(category,selcity){
             }
         }
 
-
+        console.log("sgagd");
         if(counter==0){
             $(".error_meesage_not_found").show();
             $(".error_meesage_not_found").text("Не е пронајдена работа според бараните критериуми!");
+            //$(".advanced_search_form").addClass("animated shake");
         }
         else {
             if (counter == 1) {
                 $(".success_message_found").show();
-                $(".success_message_found").text("Пронајденa e 1 работа според бараните критериуми!");
+                $(".success_message_found").html("Пронајденa e <b>1</b> работа според бараните критериуми!");
 
 
             }
             else {
+
                 $(".success_message_found").show();
-                $(".success_message_found").text("Пронајдени се " + counter + " работи според бараните критериуми!");
+                $(".success_message_found").html("Пронајдени се <b>" + counter + "</b> работи според бараните критериуми!");
             }
         }
-    });
+
 }
 
+//=========================================================//
+//===========Function to clean all the searched data=======//
+//=========================================================//
+
 function cleanData(){
+   // $(".advanced_search_form").removeClass("animated shake");
     $(".error_meesage_not_found").empty();
     $(".success_message_found").empty();
     $(".error_meesage_not_found").hide();
@@ -121,6 +198,10 @@ function cleanData(){
     $(".search_choose_city").append("<option value='hide'> Изберете град</option>");
     $(".show_results").empty();
 }
+
+//=========================================================//
+//===========Function for styling the select tags==========//
+//=========================================================//
 
 function stylingSelect(){
     //Select styling and transitions
@@ -164,14 +245,15 @@ function stylingSelect(){
             var val = $this.val();
 
             if(categories.indexOf(val)!=-1){
+                //console.log("11111");
                 cleanData();
                 loadData(val,selectedCity);
             }
             else{
+                //console.log("22222");
                 cleanData();
                 loadData(selectedCategory,val);
             }
-
         });
 
         $(document).click(function() {
@@ -184,13 +266,14 @@ function stylingSelect(){
 $(document).ready(function(){
     $('.advanced_search_input').val("");
     cleanData();
+    $(".select-styled").hide();
+    $(".select-options").hide();
     loadData(selectedCategory,selectedCity);
 
     stylingSelect();
 
     //on click search button
     $(".advanced_search_button").click(function(){
-        //$(".select-styled").text("Изберете категорија");
         //stylingSelect()
         cleanData();
         loadData("","");

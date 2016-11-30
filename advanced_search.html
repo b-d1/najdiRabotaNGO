@@ -9,101 +9,114 @@
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"  />
     <link rel="stylesheet" href="css/easy-autocomplete.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!--Scripts-->
+    <script src="js/jobs_object.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
     <script src="js/advanced_search.js"></script>
     <script src="js/jquery.easy-autocomplete.min.js"></script>
+    <script src="js/jquery.paginate.min.js"></script>
+
+    <script type="text/javascript">
+
+    </script>
 </head>
-<body>
+<body style="background: url('img/hero-area.png') no-repeat fixed">
 
 
 
-
-    <div class="advanced_search_dialog">
-        <!--Search Filters-->
-        <div class="filter_results">
+    <div class="container" >
+        <div class="advanced_search_dialog" >
+            <!--Search Filters-->
+            <div class="filter_results">
                 <div class="input-group advanced_search_form">
-                    <input type="text" class="form-control advanced_search_input" placeholder="baraj" value="England">
+                    <input type="text" class="form-control advanced_search_input" placeholder="Пребарај Држава" value="England">
                     <span class="input-group-btn" >
                     <button class="btn btn-default advanced_search_button" type="button" >Пребарај!</button>
                   </span>
                 </div><!-- /input-group -->
 
-            <br>
-            <br>
+                <br>
+                <br>
 
 
+                <div>
+                    <p>Напредни филтри:</p>
+                </div>
+                <!--Filters-->
+                <select class="search_choose_city">
+                    <!--Options added based on country-->
+                </select>
 
-            <!--Filters-->
-            <select class="search_choose_city">
-                <!--Options added based on country-->
-            </select>
 
-
-            <select class="search_choose_category">
-                <option value="hide">
+                <select class="search_choose_category">
+                    <option value="hide">
                         Изберете категорија
-                </option>
-                <option id="Housekeeper" value="Housekeeper">
-                    Housekeeper
-                </option>
-                <option id="Hostess" value="Hostess">
-                    Hostess
-                </option>
-                <option id="Waiter" value="Waiter">
-                    Waiter
-                </option>
-                <option id="Electrician" value="Electrician">
-                    Electrician
-                </option>
-                <option id="Maintenance" value="Maintenance">
-                    Maintenance
-                </option>
-                <option id="Babysitter" value="Babysitter">
-                    Babysitter
-                </option>
-                <option id="Mechanic" value="Mechanic">
-                    Mechanic
-                </option>
+                    </option>
+                    <option id="Housekeeper" value="Чистачка">
+                        Чистачка
+                    </option>
+                    <option id="Hostess" value="Хостеса">
+                        Хостеса
+                    </option>
+                    <option id="Waiter" value="Келнер">
+                        Келнер
+                    </option>
+                    <option id="Electrician" value="Електричар">
+                        Електричар
+                    </option>
+                    <option id="Maintenance" value="Одржување">
+                        Одржување
+                    </option>
+                    <option id="Babysitter" value="Бејбиситер">
+                        Бејбиситер
+                    </option>
+                    <option id="Mechanic" value="Механичар">
+                        Механичар
+                    </option>
+                </select>
 
-            </select>
 
+            </div>
 
-        </div>
-
-        <hr class="split">
-        <div class="jobs_found">
-            <div class="found">
+            <hr class="split">
+            <div class="jobs_found">
+                <div class="found">
                     <span class="success_message_found">
 
                     </span>
-            </div>
-            <div class="not_found">
-                <span class="error_meesage_not_found"></span>
+                </div>
+                <div class="not_found">
+                    <span class="error_meesage_not_found"></span>
+
+                </div>
 
             </div>
-
-        </div>
-        <!--Results-->
-        <div class="show_results">
+            <!--Results-->
+            <div class="show_results" id="res">
 
 
 
-            <!--Results Items-->
-           <!--<div class="results_item">-->
+                <!--Results Items-->
+                <!--<div class="results_item">-->
                 <!--<a href="#"><h3 class="result_title">Title 1  <span class="stars"> </span> </h3></a>-->
                 <!--<hr class="line_divide_jobs">-->
                 <!--<p class="description">This is a test job</p>-->
                 <!--<br>-->
                 <!--<input class="apply_button" type="button" value="Аплицирај" tag="jobtag">-->
 
-            <!--</div> -->
+                <!--</div> -->
+
+
+
+            </div>
 
         </div>
-
     </div>
+
 
 </body>
 </html>
