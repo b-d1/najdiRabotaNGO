@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Nevladina Organizacija</title>
+    <title>WORKabroad</title>
+    <link rel='icon' href='./img/logo.ico' type='image/x-icon' >
     <link rel="stylesheet" href="css/style.css" type="text/css" >
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"  />
@@ -11,7 +12,20 @@
     <link rel="stylesheet" href="css/awesomplete.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
+<style>
+    .navbar-brand{
+        font-family: 'Arial';
+        color: #2aabd2;
+        font-size: 25px;
+    }
+    .navbar-brand:hover{
+
+        text-decoration: underline;
+        color: white;
+    }
+</style>
 <body>
+
 <!-- ==================== Navbar ==================== -->
 
 <nav>
@@ -21,16 +35,16 @@
             <i class="fa fa-bars" aria-hidden="true"></i>
 
         </button>
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="./index.html"><span style="color:white;">WORK</span>abroad</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <div class="container-fluid">
         <div class="row">
                 <ul class="nav navbar-nav main-navbar">
-                    <li><a href="#">За нас</a></li>
-                    <li><a href="#">Најава</a></li>
-                    <li><a href="#">Регистрација</a></li>
+                    <li><a href="./about_us.html">За нас</a></li>
+                    <li><a href="./log_in.html">Најава</a></li>
+                    <li><a href="./register.html">Регистрација</a></li>
                 </ul>
         </div>
     </div>
@@ -49,9 +63,9 @@
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <form action="" method="post">
+                    <form>
                         <div class="form-group input-search form-group-lg">
-                            <input type="text" name="Search" placeholder="Држава.." class="form-control awesomplete" list="mylist" />
+                            <input type="text" name="Search" placeholder="Држава.." class="form-control awesomplete index-country" list="mylist" />
                             <datalist id="mylist">
                                 <option value="Германија">Германија</option>
                                 <option value="Англија">Англија</option>
@@ -63,7 +77,7 @@
                                 <option value="Австрија">Австрија</option>
                             </datalist>
                         </div>
-                        <button name="submit" class="btn btn-primary btn-search btn-lg">Пребарај</button>
+                        <input type="button" value="Пребарај" onclick="writeCountry()" class="btn btn-primary btn-search btn-lg">
                     </form>
                 </div>
             </div>
@@ -84,7 +98,7 @@
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-lg-2">
-                            <h3 class="testimonial-name">Име</h3>
+                            <h3 class="testimonial-name">Ивана</h3>
                         </div>
                         <div class="col-lg-10 text-right">
                             <div class="stars-container">
@@ -97,9 +111,10 @@
                         </div>
                     </div>
                     <p class="text-small">
-                        Рабоотел за <span class="span-rabotodavac">Работодавач</span>.
+                        Рабоотел за <span class="span-rabotodavac">News Media corp.</span>
                     </p>
-                    <p class="testimonials-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ipsum augue, eleifend sed urna eleifend, pellentesque dictum elit. Aenean orci neque, ultricies a justo at, ornare porta elit. Pellentesque ut sollicitudin lorem, quis aliquam mauris. Duis rhoncus, turpis vel hendrerit pulvinar, diam sapien pharetra est, ut feugiat lacus turpis eu justo. </p>
+                    <p class="testimonials-text">
+                    Наједноставно кажано, сум презадоволна од работата за News Media corp. во Лондон. Благодарение на дечките успеав да заработам доволно за да можам да патувам низ светот, и да си се журкам низ Скопје.</p>
                 </div>
             </div>
             <hr />
@@ -110,7 +125,7 @@
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-lg-2">
-                            <h3 class="testimonial-name">Име</h3>
+                            <h3 class="testimonial-name">Харис</h3>
                         </div>
                         <div class="col-lg-10 text-right">
                             <div class="stars-container">
@@ -123,9 +138,11 @@
                         </div>
                     </div>
                     <p class="text-small">
-                        Рабоотел за <span class="span-rabotodavac">Работодавач</span>.
+                        Рабоотел за <span class="span-rabotodavac">Delite Construction</span>.
                     </p>
-                    <p class="testimonials-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ipsum augue, eleifend sed urna eleifend, pellentesque dictum elit. Aenean orci neque, ultricies a justo at, ornare porta elit. Pellentesque ut sollicitudin lorem, quis aliquam mauris. Duis rhoncus, turpis vel hendrerit pulvinar, diam sapien pharetra est, ut feugiat lacus turpis eu justo. </p>
+                    <p class="testimonials-text">
+                        Воодушевен сум. Ја најдов омилената работа на најбрз начин и можев да се забавувам во Германија. Наредно лето повторно ке аплицирам!
+                    </p>
                 </div>
             </div>
 
@@ -137,7 +154,7 @@
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-lg-2">
-                            <h3 class="testimonial-name">Име</h3>
+                            <h3 class="testimonial-name">Филип</h3>
                         </div>
                         <div class="col-lg-10 text-right">
                             <div class="stars-container">
@@ -150,9 +167,11 @@
                         </div>
                     </div>
                     <p class="text-small">
-                        Рабоотел за <span class="span-rabotodavac">Работодавач</span>.
+                        Рабоотел за <span class="span-rabotodavac">Johnsson Matthey</span>.
                     </p>
-                    <p class="testimonials-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ipsum augue, eleifend sed urna eleifend, pellentesque dictum elit. Aenean orci neque, ultricies a justo at, ornare porta elit. Pellentesque ut sollicitudin lorem, quis aliquam mauris. Duis rhoncus, turpis vel hendrerit pulvinar, diam sapien pharetra est, ut feugiat lacus turpis eu justo. </p>
+                    <p class="testimonial-text">
+                        Одлично искуство, одлична работа! Сега можам да си купам кола, благодарение на дечките од workabroad.
+                    </p>
                 </div>
             </div>
 
@@ -166,10 +185,10 @@
             За нас
         </h2>
         <p class="text-center about-us-home-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sagittis nisl. Duis id ligula ornare, tristique ligula sed, tincidunt libero. Donec et molestie dui, et interdum mauris. Nunc gravida commodo lorem, ut mattis nulla rhoncus eu.Aliquam et mauris magna. Fusce lorem nisl, consequat nec aliquet ut, elementum varius augue.
+            Нашиот тим, благодарение до подршката на Владата на Република Македонија и различни компании работи беспрекорно за да ви понуди најдобрите работи во странство. Ваша задача е да ја најдете омилената работа во омилениот град и ние ќе ви помогнеме за се друго.
         </p>
         <div class="text-center">
-            <a href="about.html" class="btn btn-info about-link">Дознајте повеќе</a>
+            <a href="./about_us.html" class="btn btn-info about-link">Дознајте повеќе</a>
         </div>
         </div>
     </div>
@@ -186,15 +205,15 @@
             </div>
             <div class="col-md-6">
                 <ul class="footer-menu">
-                    <li><a href="#">За нас</a></li>
-                    <li><a href="#">Пребарување</a></li>
-                    <li><a href="#">Најава</a></li>
-                    <li><a href="#">Регистрација</a></li>
+                    <li><a href="./about_us.html">За нас</a></li>
+                    <li><a href="./advanced_search.html">Пребарување</a></li>
+                    <li><a href="./log_in.html">Најава</a></li>
+                    <li><a href="./register.html">Регистрација</a></li>
                 </ul>
                 <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                    <li><a href="www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="www.twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
 
@@ -237,7 +256,29 @@
 
             $('#testimonial3').addClass('fadeInLeft');
         }, { offset: '90%' });
+
+
+
+
     });
+
+    function writeCountry(){
+        var country = $(".index-country").val();
+        if(country.length<1){
+            console.log("fuck jankos mama");
+            $(".index-country").addClass("animated shake");
+
+            setTimeout(function(){
+                console.log("gadgagdagagda");
+                $(".index-country").removeClass("animated shake");
+            },2000);
+        }
+        else{
+            $(".index-country").removeClass("animated shake");
+            localStorage.setItem("country",country);
+            window.location.href="./advanced_search.html";
+        }
+    }
 
 </script>
 

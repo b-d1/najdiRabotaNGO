@@ -12,14 +12,14 @@ var selectedCity = "";
 var selectedCategory = "";
 var selectedCountry = "";
 
-function check100Words(string){
+function check100Words(string,tag){
     var arr = string.split(" ");
     console.log(arr.length);
     if(arr.length>100){
         //prikazi samo sto
         arr = arr.slice(0,100);
         arr = arr.join(" ");
-        return arr + " . . . <a href='#'>Прикажи повеќе</a>";
+        return arr + " . . . <a onclick='apply("+ tag +")'>Прикажи повеќе</a>";
     }
     else{
         return string;
@@ -33,14 +33,21 @@ function check100Words(string){
 function render(jobId,title,city,working_hours,salary,description){
     var appendingDiv = <!--Results Items-->
         "<div class='results_item'>" +
-        "<a href='showJob?id=" + jobId + "'>" +
+        "<a class='job-title-link' onclick='apply("+ jobId +")'>" +
         "<h3 class='result_title'>" + title + " </h3> </a>  <span class='stars'>" + city + "</span> "+
         "<h5>" + salary + "  - " + working_hours + "</h5>"+
         "<hr class='line_divide_jobs'> " +
-        "<p class='description'>" + check100Words(description) + "</p><br> " +
-        "<input class='apply_button' type='button' value='Аплицирај' tag='" + jobId + "'> </div>";
+        "<p class='description'>" + check100Words(description,jobId) + "</p><br> " +
+        "<input type='button' class='apply_button' value='Аплицирај' onclick='apply("+ jobId +")' tag='" + jobId + "'> </div>";
     return appendingDiv;
 
+}
+
+function apply(tag) {
+    //localStorage.removeItem("jobId");
+    localStorage.setItem("jobId", "0" + tag);
+    //redirect
+    window.location.href = "./display_job.html";
 }
 
 //
@@ -49,20 +56,29 @@ function showMore(){
 }
 
 
-
-
 function loadData(category,selcity){
 
    // $.getJSON( "json/jobs.json", function( data ) {
         var data = Jobs;
+        var ctr = localStorage.getItem("country");
+        if(ctr!=null) {
+            $(".advanced_search_input").val(ctr);
+        }
 
         selectedCity = selcity;
         selectedCategory=category;
-        console.log(selcity + selectedCategory);
 
         $(".search_choose_city").empty();
         $(".search_choose_city").append("<option value='hide'> Изберете град</option>");
-        var selectedcountry = $('.advanced_search_input').val();
+
+        var selectedcountry;
+        //if(ctr==null){
+        //    selectedcountry="";
+        //}
+        //else{
+            selectedcountry= $('.advanced_search_input').val();
+           console.log("Advanced" + selectedcountry);
+       // }
 
         console.log(selectedcountry);
 
@@ -166,20 +182,19 @@ function loadData(category,selcity){
         console.log("sgagd");
         if(counter==0){
             $(".error_meesage_not_found").show();
-            $(".error_meesage_not_found").text("Не е пронајдена работа според бараните критериуми!");
-            //$(".advanced_search_form").addClass("animated shake");
+            $(".error_meesage_not_found").html("<div style='font-size: 20px; color: #424242;'>Не е пронајдена работа според бараните критериуми!</div>");
         }
         else {
             if (counter == 1) {
                 $(".success_message_found").show();
-                $(".success_message_found").html("Пронајденa e <b>1</b> работа според бараните критериуми!");
+                $(".success_message_found").html("<div style='font-size: 20px; color: #424242;'>Пронајденa e <b>1</b> работа според бараните критериуми!</div>");
 
 
             }
             else {
 
                 $(".success_message_found").show();
-                $(".success_message_found").html("Пронајдени се <b>" + counter + "</b> работи според бараните критериуми!");
+                $(".success_message_found").html("<div style='font-size: 20px; color: #424242;'>Пронајдени се <b>" + counter + "</b> работи според бараните критериуми!</div>");
             }
         }
 
@@ -264,21 +279,44 @@ function stylingSelect(){
 }
 
 $(document).ready(function(){
+    //localStorage.setItem("country","Германија");
+
+    $(".scroll_to_top").hide();
     $('.advanced_search_input').val("");
     cleanData();
     $(".select-styled").hide();
     $(".select-options").hide();
+
     loadData(selectedCategory,selectedCity);
 
     stylingSelect();
 
     //on click search button
     $(".advanced_search_button").click(function(){
-        //stylingSelect()
+        localStorage.removeItem("country");
         cleanData();
         loadData("","");
 
         stylingSelect();
     });
 
+    //scrolling
+    $(".scroll_to_top").click(function(e){
+        console.log("gagad");
+       e.preventDefault();
+        $("html, body").animate({"scrollTop":"0px"},1000);
+    });
+});
+
+$(document).scroll(function(){
+
+
+    var y = $(this).scrollTop();
+    console.log(y);
+    if(y>300){
+        $(".scroll_to_top").fadeIn();
+    }
+    else{
+        $(".scroll_to_top").fadeOut();
+    }
 });

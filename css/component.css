@@ -150,10 +150,17 @@
 
 .apply_job{
     padding: 20px;
-    width: 43% !important;
+    width: 50% !important;
     margin-top:20px;
     margin-bottom:20px;
     border:2px solid lightgray;
+}
+
+@media(max-width: 1000px){
+    .apply_job{
+        width: 90% !important;
+        left: 5% !important;
+    }
 }
 
 .apply-title{
@@ -173,6 +180,7 @@
 .apply-button:hover{
     background-color: #2b669a;
 }
+
 .apply-cancel-button{
     border:2px solid #2aabd2;
     background-color: white;
@@ -181,10 +189,12 @@
     color: #2aabd2;
     font-size:25px;
 }
+
 .apply-cancel-button:hover{
     color: #2b669a;
     border:3px solid #2b669a;
 }
+
 textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -193,13 +203,14 @@ textarea {
     width: 100%;
     height: 150px;
 }
+
 .blur{
     -webkit-filter:blur(3px);
     -moz-filter:blur(3px);
 }
 
 .main_page_display_job{
-    padding: 15px;
+    padding: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -207,6 +218,37 @@ textarea {
 .apply_job{
      position: absolute;
      top:-1500px;
-     left:30%;
+     left:26%;
     background-color: white;
- }
+}
+
+.apply_now{
+    border: none;
+    background-color: #2aabd2;
+    width: 180px;
+    height:45px;
+    color: white;
+    font-size:25px;
+}
+
+.apply_now:hover{
+    background-color: #2b669a;
+}
+
+.the_job{
+    font-size: 18px;
+    color: gray;
+}
+
+.the_job i{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.success_applied{
+    font-weight: bold;
+    font-size: 20px;
+}
+.members-overview-top,.team-description,.mission{
+    font-family: 'Roboto',sans-serif !important;
+}

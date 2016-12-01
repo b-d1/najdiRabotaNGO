@@ -2,169 +2,486 @@
 
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-datepicker.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
 
-        <title></title>
+    <title>Регистрација</title>
+    <link rel='icon' href='./img/logo.ico' type='image/x-icon' >
+    <link rel="stylesheet" href="css/style.css" type="text/css" >
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/bootstrap-select-master/css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"  />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/component.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Arial';
+            color: #2aabd2;
+            font-size: 25px;
+        }
+        .navbar-brand:hover{
 
-    </head>
+            text-decoration: underline;
+            color: white;
+        }
+    </style>
 
-    <body>
 
-        <div class="container">
+    <style>
 
-            <div class="col-xs-10 col-sm-8 col-md-6 col-lg-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-3 col-lg-offset-3">
+        .error-sign-up {
+            border: solid red 1px;
+        }
 
-                <form class="form-horizontal">
+        .error-sign-up-message-tr {
+            color: transparent;
+            font-size: 10px;
+        }
 
-                    <div class="form-group">
+        .error-sign-up-message-red{
+            color: red;
+            margin-left: 1em;
+            font-size: 10px;
+        }
 
-                        <label for="name" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Име:</label>
+        .error-sign-up-message {
+            margin-bottom: 5px;
+            margin-top: 5px;
+            font-size: 10px
+        }
 
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        .apply-button {
+            border: none;
+            background-color: #2aabd2;
+            width: 180px;
+            height: 45px;
+            color: white;
+            font-size: 18px;
+        }
 
-                            <input type="text" class="form-control" id="name"/>
+        .apply-button:hover {
+            background-color: #2b669a;
+        }
 
-                        </div>
+        .form-control {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
 
-                    </div>
+        #register {
+            margin-top: 1em;
+        }
 
-                    <div class="form-group">
+        #pass-info {
+            font-size: 10px;
+        }
 
-                        <label for="lname" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Презиме:</label>
+        #terms-conditions {
+            margin-top: 2em;
+            font-size: 11px;
+        }
+        .well{
+            background-color: white !important;
+        }
+    </style>
 
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    <title>Регистирај се</title>
 
-                            <input type="text" class="form-control" id="lname"/>
+    <style type="text/css"></style></head>
 
-                        </div>
+    <body class="others-menu">
+        <!-- ==================== Navbar ==================== -->
 
-                    </div>
+        <nav class="nav-others">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
 
-                    <div class="form-group">
+                    </button>
+                    <a class="navbar-brand" href="./index.html"><span style="color:white;">WORK</span>abroad</a>
+                </div>
 
-                        <label for="email" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">E-mail адреса:</label>
-
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-
-                            <input type="email" class="form-control" id="email"/>
-
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="user" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Корисничко име:</label>
-
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-
-                            <input type="text" class="form-control" id="user"/>
-
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="pass" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Лозинка:</label>
-
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-
-                            <input type="password" class="form-control" id="pass"/>
-
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="rep-pass" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Повторете лозинка:</label>
-
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-
-                            <input type="password" class="form-control" id="rep-pass"/>
-
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="dob" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label text-right">Датум на раѓање:</label>
-
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-
-                            <input type="text" class="form-control" id="dob"/>
-
-                        </div>
-
-                    </div>
-
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <div class="row">
+                        <ul class="nav navbar-nav main-navbar" id="nav-others-main">
+                            <li><a href="./about_us.html">За нас</a></li>
+                            <li><a href="./log_in.html">Најава</a></li>
+                            <li><a href="./register.html">Регистрација</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+        <!-- ==================== /Navbar ==================== -->
 
-                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        <main class="main-others">
+            <div class="container">
+                <div class="row job-title-row">
+                    <div class="col-md-6">
+                        <h2 class="text-header-others">Регистрирај се</h2>
+                    </div>
+                </div>
+                <br>
+                <ol class="breadcrumb">
+                    <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i>
+                        Почетна</a></li>
+                    <li class="active">Регистрирај се</li>
+                </ol>
+                <div class="job-body" style="min-height: 800px; background-color: transparent !important;">
+                    <div class="job-body-header">
 
-                            <button type="submit" class="btn btn-primary btn-block" id="register">
+                    </div>
+                    <div class="job-body-main" style="padding-top: 30px;">
 
-                                Регистрирај се
 
-                            </button>
+
+                        <div class="main_page_display_register">
+                            <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 col-sm-offset-2 col-md-offset-3 col-lg-offset-3 well">
+
+                                <!--REGISTRATION FORM-->
+                                <form>
+
+                                    <!--NAME INPUT-->
+                                    <div class="form-group">
+
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                                            <label for="fname" class="control-label">Име</label>
+
+                                            <input type="text" class="form-control" id="fname">
+
+                                            <p class="error-sign-up-message-tr" id="error-sign-up-message-fname">*Внесете валидно име</p>
+
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                                            <label for="lname" class="control-label">Презиме</label>
+
+                                            <input type="text" class="form-control" id="lname">
+
+                                            <p class="error-sign-up-message-tr" id="error-sign-up-message-lname">*Внесете валидно презиме</p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--DATE OF BIRTH & GENDER-->
+                                    <div class="form-group">
+
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                                            <label for="dob" class="control-label" >Датум на раѓање</label>
+
+                                            <input type="text" class="form-control" id="dob">
+
+                                            <p class="error-sign-up-message-tr" id="error-sign-up-message-dob">*Внесете валиден датум</p>
+
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                                            <label for="gender">Пол</label>
+
+                                            <select class="form-control" id="gender" style="-webkit-appearance: menulist; -moz-appearance: menulist">
+
+                                                <option value="null" selected style="display: none">Одберете...</option>
+                                                <option value="Машко">Машко</option>
+                                                <option value="Женско">Женско</option>
+                                                <option value="Друго">Друго</option>
+
+                                            </select>
+
+                                            <p class="error-sign-up-message-tr" id="error-sign-up-message-gender">*Одберете го Вашиот пол</p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--EMAIL INPUT-->
+                                    <div class="form-group">
+
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                                            <label for="email" class="control-label">E-mail адреса:</label>
+
+                                            <input type="text" class="form-control" id="email">
+
+                                            <p class="error-sign-up-message-tr" id="error-sign-up-message-email">*Внесете валидна E-mail адреса</p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--USERNAME INPUT-->
+                                    <div class="form-group">
+
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                                            <label for="user" class="control-label">Корисничко име</label>
+
+                                            <input type="text" class="form-control" id="user">
+
+                                            <p class="error-sign-up-message-tr" id="error-sign-up-message-user">*Внесете валидно корисничко име</p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--PASSWORD INPUT-->
+                                    <div class="form-group">
+
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                                            <label for="pass" class="control-label text-right">Лозинка</label>
+
+                                            <p id="pass-info" class="pull-right">Минимална должина од 8 карактери</p>
+
+                                            <input type="password" class="form-control" id="pass">
+
+                                            <p class="error-sign-up-message-tr" id="error-sign-up-message-pass">*Внесете валидна лозинка</p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--REPEAT PASSWORD INPUT-->
+                                    <div class="form-group">
+
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                                            <label for="rep-pass" class="control-label text-right">Повтори лозинка</label>
+
+                                            <input type="password" class="form-control" id="rep-pass">
+
+                                            <p class="error-sign-up-message-tr" id="error-sign-up-message-rep-pass">*Повторете ја вашата лознинка</p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--SUBMIT DATA BUTTON & TERMS AND CONDITIONS-->
+                                    <div class="form-group">
+
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+
+                                            <button type="button" class="apply-button" id="register">
+
+                                                Регистрирај се
+
+                                            </button>
+
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+
+                                            <p id="terms-conditions">
+
+                                                Со кликнување на Регистрирај се, Вие се согласуваате со нашите <a href="#">Услови</a> и дека сте ги прочитале нашите <a href="#">Правила за податоци</a>, вклучувајќи ја и нашата <a href="#">Употреба на колачиња</a>.
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </form>
+
+                            </div>
 
 
                         </div>
 
+
+
+
+
+
                     </div>
-
-
-                </form>
-
+                </div>
             </div>
 
-        </div>
 
-        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap-datepicker.min.js"></script>
-        <script type="text/javascript">
+        </main>
 
-//            //DATEPICKER
-//            $('#dob').datepicker({a
-//                format: "dd MM yyyy",
-//                startView: "years",
-//                endDate: '-18y',
-//                startDate: '-100y',
-//                autoClose: true
-//            }).on('changeDate', function (ev) {
-//                $(this).datepicker('hide');
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="footer-text">DIGIT 2016</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-menu">
+                            <li><a href="./about_us.html">За нас</a></li>
+                            <li><a href="./advanced_search.html">Пребарување</a></li>
+                            <li><a href="./log_in.html">Најава</a></li>
+                            <li><a href="./register.html">Регистрација</a></li>
+                        </ul>
+                        <ul class="social-icons">
+                            <li><a href="www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                            <li><a href="www.facebook.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="www.facebook.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    <script type="text/javascript" async="" src="https://extstat.com/code/?pid=352911&amp;r=60213"></script><script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/bootstrap-select-master/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            //DATEPICKER
+            $('#dob').datepicker({
+                format: "dd MM yyyy",
+                startView: "years",
+                endDate: '-18y',
+                startDate: '-100y',
+                autoClose: true
+            }).on('changeDate', function (ev) {
+                $(this).datepicker('hide');
+            });
+
+            $('input, select').click(function() {
+                $(this).removeClass('error-sign-up');
+                //console.log($('input').attr('id'));
+                $(this).next().removeClass('error-sign-up-message-red').addClass('error-sign-up-message-tr');
+                //$('#pass-info').removeClass('error-sign-up-message-tr');
+            });
+
+//            $('#pass').click(function() {
+//                $('#error-sign-up-message-pass').removeClass('error-sign-up-message-red').addClass('error-sign-up-message-tr');
 //            });
-//
-//            //VALIDATION
-//            var valid=null;
-//            function validate(){
-//
-//            }
 
-            console.log(5);
+            $('.error-sign-up-message').click(function() {
 
-            $(document).ready(function() {
-                $('#register').click(function() {
-                    var name=$('#name').val();
-                    console.log(name);
-                });
+            });
+
+            function validateEmail(email) {
+                var $regx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return $regx.test(email);
+            }
+
+            //SUBMIT DATA
+            $('#register').click(function() {
+
+                //window.location.href = 'https://www.facebook.com/';
+
+                var $fname=$('#fname').val();
+                var $lname=$('#lname').val();
+                var $email=$('#email').val();
+                var $user=$('#user').val();
+                var $pass=$('#pass').val();
+                var $rep_pass=$('#rep-pass').val();
+                var $dob=$('#dob').val();
+                var $selected = document.getElementById("gender");
+                var $gender = $selected.options[$selected.selectedIndex].value;
+
+                $('input').removeClass('error-sign-up');
+
+                var $error = 8;
+
+                if($fname.length == 0) {
+                    $('#fname').addClass('error-sign-up');
+                    $('#error-sign-up-message-fname').addClass('error-sign-up-message-red').removeClass('error-sign-up-message-tr');
+                    $error--;
+                }
+
+                if($lname.length == 0) {
+                    $('#lname').addClass('error-sign-up');
+                    $('#error-sign-up-message-lname').addClass('error-sign-up-message-red').removeClass('error-sign-up-message-tr');
+                    $error--;
+                }
+
+                if($email.length == 0  || validateEmail($email) == 0) {
+                    $('#email').addClass('error-sign-up');
+                    $('#error-sign-up-message-email').addClass('error-sign-up-message-red').removeClass('error-sign-up-message-tr');
+                    $error--;
+                }
+
+                if($user.length == 0) {
+                    $('#user').addClass('error-sign-up');
+                    $('#error-sign-up-message-user').addClass('error-sign-up-message-red').removeClass('error-sign-up-message-tr');
+                    $error--;
+                }
+
+                if($pass != $rep_pass || $pass.length <=7 || $rep_pass.length <= 7) {
+
+                    $('#pass, #rep-pass').addClass('error-sign-up');
+                    $('#error-sign-up-message-pass').addClass('error-sign-up-message-red').removeClass('error-sign-up-message-tr');
+                    $('#error-sign-up-message-rep-pass').addClass('error-sign-up-message-red').removeClass('error-sign-up-message-tr');
+                    $('#pass').val('');
+                    $('#rep-pass').val('');
+                    $error--;
+                }
+
+                console.log('\n' + $error);
+
+                if($dob.length == 0) {
+                    $('#dob').addClass('error-sign-up');
+                    $('#error-sign-up-message-dob').addClass('error-sign-up-message-red').removeClass('error-sign-up-message-tr');
+                    $error--;
+                }
+
+                if($gender == 'null') {
+                    $('#gender').addClass('error-sign-up');
+                    $('#error-sign-up-message-gender').addClass('error-sign-up-message-red').removeClass('error-sign-up-message-tr');
+                    $error--;
+                }
+
+                if ($error == 8) {
+                    //$('input').val('');
+                    $('select').prop('selected', function() {
+                        return this.defaultSelected;
+                    });
+                }
+
+
+                //console.log($fname + ' ' + $lname + ' ' + $email + ' ' + $user + ' ' + $pass + ' ' + $rep_pass + ' ' + $gender);
+            });
+
+            //SWITCH GENDER CLASSES
+            $('#male, #gender-label').click(function() {
+                $('.gender').removeClass('selected');
+                $('#male').removeClass('btn-default').addClass('btn-primary').addClass('selected');
+                $('#female').removeClass('btn-primary').addClass('btn-default');
+            });
+
+            $('#female').click(function() {
+                $('.gender').removeClass('selected');
+                $('#female').removeClass('btn-default').addClass('btn-primary').addClass('selected');
+                $('#male').removeClass('btn-primary').addClass('btn-default');
             });
 
 
 
 
-        </script>
+        });
+
+
+
+
+    </script>
+
+
 
     </body>
 

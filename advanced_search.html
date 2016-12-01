@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Advanced Search</title>
+    <link rel='icon' href='./img/logo.ico' type='image/x-icon' >
+    <title>Напредно пребарување</title>
 
     <!--Styles-->
     <link rel="stylesheet" href="css/style.css" type="text/css" >
@@ -23,99 +24,184 @@
     <script type="text/javascript">
 
     </script>
+    <style>
+        .navbar-brand{
+            font-family: 'Arial';
+            color: #2aabd2;
+            font-size: 25px;
+        }
+        .navbar-brand:hover{
+
+            text-decoration: underline;
+            color: white;
+        }
+        .job-title-link{
+            color:#2aabd2;
+        }
+        .job-title-link:hover{
+            cursor: pointer;
+        }
+    </style>
 </head>
-<body style="background: url('img/hero-area.png') no-repeat fixed">
+<body class="others-menu">
 
 
 
-    <div class="container" >
-        <div class="advanced_search_dialog" >
-            <!--Search Filters-->
-            <div class="filter_results">
-                <div class="input-group advanced_search_form">
-                    <input type="text" class="form-control advanced_search_input" placeholder="Пребарај Држава" value="England">
-                    <span class="input-group-btn" >
-                    <button class="btn btn-default advanced_search_button" type="button" >Пребарај!</button>
-                  </span>
-                </div><!-- /input-group -->
+<!-- ==================== Navbar ==================== -->
 
-                <br>
-                <br>
+<nav class="nav-others">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars" aria-hidden="true"></i>
 
+            </button>
+            <a class="navbar-brand" href="./index.html"><span style="color:white;">WORK</span>abroad</a>
+        </div>
 
-                <div>
-                    <p>Напредни филтри:</p>
-                </div>
-                <!--Filters-->
-                <select class="search_choose_city">
-                    <!--Options added based on country-->
-                </select>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="row">
+                <ul class="nav navbar-nav main-navbar" id="nav-others-main">
+                    <li><a href="./about_us.html">За нас</a></li>
+                    <li><a href="./log_in.html">Најава</a></li>
+                    <li><a href="./register.html">Регистрација</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
 
-
-                <select class="search_choose_category">
-                    <option value="hide">
-                        Изберете категорија
-                    </option>
-                    <option id="Housekeeper" value="Чистачка">
-                        Чистачка
-                    </option>
-                    <option id="Hostess" value="Хостеса">
-                        Хостеса
-                    </option>
-                    <option id="Waiter" value="Келнер">
-                        Келнер
-                    </option>
-                    <option id="Electrician" value="Електричар">
-                        Електричар
-                    </option>
-                    <option id="Maintenance" value="Одржување">
-                        Одржување
-                    </option>
-                    <option id="Babysitter" value="Бејбиситер">
-                        Бејбиситер
-                    </option>
-                    <option id="Mechanic" value="Механичар">
-                        Механичар
-                    </option>
-                </select>
-
+<!-- ==================== /Navbar ==================== -->
+<main class="main-others">
+    <div class="container">
+        <div class="row job-title-row">
+            <div class="col-md-12">
+                <h2 class="text-header-others"><i class="fa fa-search"></i> Напредно пребарување</h2>
+            </div>
+        </div>
+        <ol class="breadcrumb">
+            <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i>
+                Почетна</a></li>
+            <li class="active">Напредно пребарување</li>
+        </ol>
+        <div class="job-body">
+            <div class="job-body-header">
 
             </div>
+            <div class="job-body-main">
 
-            <hr class="split">
-            <div class="jobs_found">
-                <div class="found">
+                <div class="advanced_search_dialog" >
+                    <!--Search Filters-->
+                    <p>Внесете име на држава:</p>
+                    <div class="filter_results">
+                        <div class="input-group advanced_search_form">
+                            <input type="text" class="form-control advanced_search_input" placeholder="Пребарај Држава" value="England">
+                            <span class="input-group-btn" >
+                    <button class="btn btn-default advanced_search_button" type="button" >Пребарај!</button>
+                  </span>
+                        </div><!-- /input-group -->
+
+                        <br>
+                        <br>
+
+
+                        <div>
+                            <p>Напредни филтри:</p>
+                        </div>
+                        <!--Filters-->
+                        <select class="search_choose_city">
+                            <!--Options added based on country-->
+                        </select>
+
+
+                        <select class="search_choose_category">
+                            <option value="hide">
+                                Изберете категорија
+                            </option>
+                            <option id="Housekeeper" value="Чистачка">
+                                Чистачка
+                            </option>
+                            <option id="Hostess" value="Хостеса">
+                                Хостеса
+                            </option>
+                            <option id="Waiter" value="Келнер">
+                                Келнер
+                            </option>
+                            <option id="Electrician" value="Електричар">
+                                Електричар
+                            </option>
+                            <option id="Maintenance" value="Одржување">
+                                Одржување
+                            </option>
+                            <option id="Babysitter" value="Бејбиситер">
+                                Бејбиситер
+                            </option>
+                            <option id="Mechanic" value="Механичар">
+                                Механичар
+                            </option>
+                        </select>
+
+
+                    </div>
+
+                    <hr class="split">
+                    <div class="jobs_found">
+                        <div class="found">
                     <span class="success_message_found">
 
                     </span>
-                </div>
-                <div class="not_found">
-                    <span class="error_meesage_not_found"></span>
+                        </div>
+                        <div class="not_found">
+                            <span class="error_meesage_not_found"></span>
+
+                        </div>
+
+                    </div>
+                    <!--Results-->
+                    <div class="show_results" id="res">
+
+
+                    </div>
 
                 </div>
 
             </div>
-            <!--Results-->
-            <div class="show_results" id="res">
+        </div>
+    </div>
 
 
+</main>
 
-                <!--Results Items-->
-                <!--<div class="results_item">-->
-                <!--<a href="#"><h3 class="result_title">Title 1  <span class="stars"> </span> </h3></a>-->
-                <!--<hr class="line_divide_jobs">-->
-                <!--<p class="description">This is a test job</p>-->
-                <!--<br>-->
-                <!--<input class="apply_button" type="button" value="Аплицирај" tag="jobtag">-->
-
-                <!--</div> -->
-
-
-
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="footer-text">DIGIT 2016</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="footer-menu">
+                    <li><a href="./about_us.html">За нас</a></li>
+                    <li><a href="./advanced_search.html">Пребарување</a></li>
+                    <li><a href="./log_in.html">Најава</a></li>
+                    <li><a href="./register.html">Регистрација</a></li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="www.facebook.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="www.facebook.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                </ul>
             </div>
 
         </div>
     </div>
+</footer>
+
+
+<div class="scroll_to_top">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</div>
+
 
 
 </body>

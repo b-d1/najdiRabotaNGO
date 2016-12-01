@@ -1,39 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
-    <!--Styles-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Работа</title>
+    <link rel='icon' href='./img/logo.ico' type='image/x-icon' >
     <link rel="stylesheet" href="css/style.css" type="text/css" >
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"  />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/component.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Arial';
+            color: #2aabd2;
+            font-size: 25px;
+        }
+        .navbar-brand:hover{
 
-    <!--Scripts-->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="js/jquery.easy-autocomplete.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jobs_object.js"></script>
-    <script src="js/display_job.js"></script>
-
-
+            text-decoration: underline;
+            color: white;
+        }
+    </style>
 </head>
-<body>
+<body class="others-menu">
+<div class="for-blur">
 
 
 
-<!--main page-->
-<div class="container">
-    <div class="main_page_display_job">
+<!-- ==================== Navbar ==================== -->
 
+<nav class="nav-others">
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+
+        </button>
+        <a class="navbar-brand" href="./index.html"><span style="color:white;">WORK</span>abroad</a>
     </div>
 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="row">
+                <ul class="nav navbar-nav main-navbar" id="nav-others-main">
+                    <li><a href="./about_us.html">За нас</a></li>
+                    <li><a href="./log_in.html">Најава</a></li>
+                    <li><a href="./register.html">Регистрација</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ==================== /Navbar ==================== -->
+
+<main class="main-others">
+<div class="container">
+    <div class="row job-title-row">
+        <div class="col-md-6">
+            <h2 class="text-header-others">Име на работа</h2>
+        </div>
+        <div class="col-md-6">
+            <p class="text-right date-text">
+                 Објавено на <span class="span-date">01 Ноември 2016</span></p>
+        </div>
+    </div>
+        <ol class="breadcrumb">
+            <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i>
+                 Почетна</a></li>
+            <li><a href="./advanced_search.html"><i class="fa fa-search" aria-hidden="true"></i>
+                 Пребарувај работа</a></li>
+            <li class="active">Работа</li>
+        </ol>
+    <div class="job-body">
+        <div class="job-body-header">
+
+        </div>
+        <div class="job-body-main">
+
+
+
+            <div class="main_page_display_job">
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
 </div>
+
+
+</main>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="footer-text">DIGIT 2016</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer-menu">
+                        <li><a href="./about_us.html">За нас</a></li>
+                        <li><a href="./advanced_search.html">Пребарување</a></li>
+                        <li><a href="./log_in.html">Најава</a></li>
+                        <li><a href="./register.html">Регистрација</a></li>
+                    </ul>
+                    <ul class="social-icons">
+                        <li><a href="www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href="www.facebook.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="www.facebook.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/jquery.easy-autocomplete.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jobs_object.js"></script>
+<script src="js/display_job.js"></script>
+
+<script src="js/custom.js"></script>
+
+
+</div>
+
 
 <!--Popup dialog-->
 <div class="container apply_job">
@@ -42,7 +152,7 @@
         <h4 class="apply-title">Аплицирај за работа</h4>
         <hr>
         <p>За да аплицирате за избраната работа мора да ги доставите потребните документи и да се согласите со условите за користење на страната!
-        Дополнително може да оставите ваше мотивационо писмо каде што ке објаснувате кои вештини ги поседувате и зашто мислите дека сте идеален кандидат за работата!</p>
+            Дополнително може да оставите ваше мотивационо писмо каде што ке објаснувате кои вештини ги поседувате и зашто мислите дека сте идеален кандидат за работата!</p>
     </div>
 
     <hr>
@@ -67,7 +177,7 @@
         <div class="col-md-8">
             <!--Comments-->
             <div>
-                <textarea></textarea>
+                <textarea class="motivation_letter"></textarea>
             </div>
         </div>
     </div>
@@ -76,11 +186,11 @@
     <div class="row text-center">
         <input type="button" class="apply-button" value="Аплицирај">
         <input type="button" class="apply-cancel-button" value="Откажи">
+        <br><br>
+        <p class="success_applied">Успешно аплицирање. За следни постапки и известувања ке бидете известени на вашата лична маил адреса.</p>
     </div>
 
 </div>
-
-<script src="js/custom.js"></script>
 
 
 </body>

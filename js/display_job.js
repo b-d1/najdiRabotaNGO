@@ -21,53 +21,59 @@ function render(jobs,jobID){
         if(jobId == jobID){
 
             var docsNeeded = "<ul class='needed-documents'>";
-
             for(var j=0;j<docs.length;j++){
                 docsNeeded += "<li>"+docs[j]['doc']+"</li>";
             }
             docsNeeded+="</ul>";
 
-            var display = " <p>Место: "+ city +","+ country +"</p>"+
-                "<p>Плата: " + salary + "</p>"+
-                "<p>Работно време: " + time + "</p>"+
-                "<p>Работодавец: " + employer + "</p>"+
-                "<p>Опис</p>"+
+
+
+            var display = "<div class='the_job'><p><i>Место: </i>"+ city +","+ country +"</p>"+
+                "<p><i>Плата:</i> " + salary + "</p>"+
+                "<p><i>Работно време:</i> " + time + "</p>"+
+                "<p><i>Работодавец:</i> " + employer + "</p>"+
+                "<p><i>Опис:</i></p>"+
                 "<p>" + description + "</p>"+
-                "<p>Потребни документи:</p>"+
+                "<p><i>Потребни документи:</i></p>"+
                 docsNeeded+
-                "<p>Дали сте спремни за авантура? <input type='button' value='Аплицирај' class='apply_now'></p>"+
+                "<p>Дали сте спремни? <br><br>  <input type='button' value='Аплицирај' class='apply_now'></p>"+
                 "<br>"+
-                "<hr>";
+                "<hr></div> ";
 
             //render and break;
             $(".main_page_display_job").append(display);
+            $(".text-header-others").text(title);
             return;
         }
     }
 }
 
 $(document).ready(function(){
-    localStorage.setItem("jobId", "01");
+    $(".success_applied").hide();
     var jobs = Jobs['jobs'];
     var jobId = localStorage.getItem("jobId");
     render(jobs,jobId);
-    console.log(jobs);
 
-    //$(".apply_job").hide();
     $(".apply_now").click(function(){
-        $(".main_page_display_job").addClass("blur");
+        $(".for-blur").addClass("blur");
         console.log("clicked");
        $(".apply_job").animate({
-           top:"+=1500px"
-
+           top:"+=1600px"
        },500);
     });
 
     $(".apply-cancel-button").click(function(){
-        $(".main_page_display_job").removeClass("blur");
+        $(".for-blur").removeClass("blur");
         $(".apply_job").animate({
-            top:"-=1500px"
+            top:"-=1600px"
         },500);
+    });
+
+    $(".apply-button").click(function(){
+        $(".success_applied").show();
+        setTimeout(function(){
+            window.location.href="./index.html";
+        },8000);
     });
 
 });
