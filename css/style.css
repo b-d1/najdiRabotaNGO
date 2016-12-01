@@ -17,6 +17,10 @@ button {
     color: rgba(128, 128, 128, 0.89);
 }
 
+#navbar-brand-others {
+   color:white;
+}
+
 .not-visible {
     display:none;
 }
@@ -141,6 +145,7 @@ nav li a {
 
 
 
+
 /* Footer */
 
 footer {
@@ -222,9 +227,9 @@ select {
 }
 
 .advanced_search_dialog{
-    background-color: white;margin-top:10%;
+    /*background-color: white;margin-top:10%;*/
     padding: 7% 8%;
-    border: 2px solid lightgray;
+    /*border: 2px solid lightgray;*/
 
 }
 
@@ -422,6 +427,8 @@ select {
     .main-navbar li a {
         color:black;
     }
+
+
 
     .navbar-header {
         border-bottom: 1px solid #e4e4e4;
