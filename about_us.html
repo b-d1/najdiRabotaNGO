@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>За нас</title>
-
+    <link rel='icon' href='./img/logo.ico' type='image/x-icon' >
     <!--Styles-->
     <link rel="stylesheet" href="css/style.css" type="text/css" >
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
@@ -11,133 +14,219 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/component.css">
+    <style>
+        .navbar-brand{
+            font-family: 'Arial';
+            color: #2aabd2;
+            font-size: 25px;
+        }
+        .navbar-brand:hover{
 
-    <!--Scripts-->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="js/jquery.easy-autocomplete.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/team.js"></script>
-
+            text-decoration: underline;
+            color: white;
+        }
+    </style>
 </head>
-<body>
-    <!--Navigation place-->
+<body class="others-menu">
 
-    <div class="team-image">
+<!-- ==================== Navbar ==================== -->
 
-    </div>
-
+<nav class="nav-others">
     <div class="container">
-        <div class="members">
-            <div class="overview">
-                <i class="small">бекстејџ</i>
-                <h3 class="members-overview-top">Тимот кој ви го овозможува сето ова!</h3>
-            </div>
-            <hr class="line-break">
-            <div class="show-members">
-                <div class="row">
-                    <div class="col-md-12 members" id="slickable" >
-                        <div class="col-sm-6 team-member" >
-                            <img src="img/member.png" name="Симона" role="Контрактор">
-                            <div class="details" style="display: none">
-                                <h3>Симона</h3>
-                                <p>Контрактор</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 team-member">
-                            <img src="img/member1.png" class=""  name="Алан" role="Веб девелопер">
-                            <div class="details" style="display: none">
-                                <h3>Алан</h3>
-                                <p>Веб Девелопер</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 team-member">
-                            <img src="img/member3.png"  name="Кристијан" role="Член">
-                            <div class="details" style="display: none">
-                                <h3>Кристијан</h3>
-                                <p>Член</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 team-member">
-                            <img src="img/member4.png"  name="Алиса" role="Член">
-                            <div class="details" style="display: none">
-                                <h3>Алиса</h3>
-                                <p>Член</p>
-                            </div>
-                        </div>
-                    </div>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars" aria-hidden="true"></i>
 
-                    <div class="col-md-12 text-center">
-                        <h3>Апасионирани членови</h3>
-                        <hr class="line-break">
-                        <p class="team-description">Нашиот тим, благодарение до подршката на Владата на Република Македонија и различни компании
-                            работи беспрекорно за да ви понуди најдобрите работи во странство. Ваша задача е да ја најдете омилената
-                            работа во омилениот град и ние ќе ви помогнеме за се друго.
-                            <br><br>
-                            <b>Најбрзо и наједноставно!</b>
-                        </p>
+        </button>
+        <a class="navbar-brand" href="./index.html"><span style="color:white;">WORK</span>abroad</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="row">
+                <ul class="nav navbar-nav main-navbar" id="nav-others-main">
+                    <li><a href="./about_us.html">За нас</a></li>
+                    <li><a href="./log_in.html">Најава</a></li>
+                    <li><a href="./register.html">Регистрација</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ==================== /Navbar ==================== -->
+
+<main class="main-others">
+<div class="container">
+    <div class="row job-title-row">
+        <div class="col-md-6">
+            <h2 class="text-header-others">За нас</h2>
+        </div>
+    </div>
+    <br>
+        <ol class="breadcrumb">
+            <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i>
+                 Почетна</a></li>
+            <li class="active">За нас</li>
+        </ol>
+    <div class="job-body">
+        <div class="job-body-header">
+
+        </div>
+        <div class="job-body-main">
+            <div class="main_page_display_job">
+                <div class="members">
+                    <div class="overview">
+                        <i class="small">бекстејџ</i>
+                        <h3 class="members-overview-top">Тимот кој ви го овозможува сето ова!</h3>
+                    </div>
+                    <hr class="line-break">
+                    <div class="show-members">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6 members" id="slickable" >
+                                <div class="col-sm-6 col-xs-12 col-md-3 team-member" >
+                                    <img src="img/member.png" name="Симона" role="Контрактор">
+                                    <div class="details" style="display: none">
+                                        <h3>Симона</h3>
+                                        <p>Контрактор</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12  col-md-3  team-member">
+                                    <img src="img/member1.png" class=""  name="Алан" role="Веб девелопер">
+                                    <div class="details" style="display: none">
+                                        <h3>Алан</h3>
+                                        <p>Веб Девелопер</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12  col-md-3  team-member">
+                                    <img src="img/member3.png"  name="Кристијан" role="Член">
+                                    <div class="details" style="display: none">
+                                        <h3>Кристијан</h3>
+                                        <p>Член</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12  col-md-3  team-member">
+                                    <img src="img/member4.png"  name="Алиса" role="Член">
+                                    <div class="details" style="display: none">
+                                        <h3>Алиса</h3>
+                                        <p>Член</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <h3>Апасионирани членови</h3>
+                                <hr class="line-break">
+                                <p class="team-description">Нашиот тим, благодарение до подршката на Владата на Република Македонија и различни компании
+                                    работи беспрекорно за да ви понуди најдобрите работи во странство. Ваша задача е да ја најдете омилената
+                                    работа во омилениот град и ние ќе ви помогнеме за се друго.
+                                    <br><br>
+                                    <b>Најбрзо и наједноставно!</b>
+                                </p>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
-            </div>
 
-        </div>
-    </div>
 
-    <div class="mission">
-        <div class="container ">
-            <div class="text-center">
-                <i class="small" style="color:whitesmoke !important;">Work&Travel за секој</i>
-                <h3 class="members-overview-top">Наша мисија!</h3>
-                <br>
-                <br>
-            </div>
-            <div class="mission">
-                <div class="row">
-                    <div class="col-md-6">
-                        Нашата мисија е едноставна:
+
+                <div class="mission" style="padding: 30px;">
+                        <div class="text-center">
+                            <i class="small" style="color:whitesmoke !important;">Work&Travel за секој</i>
+                            <h3 class="members-overview-top">Наша мисија!</h3>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="mission2">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Нашата мисија е едноставна:
+                                    <br>
+                                    Да ви овозможеме незаборавно неколку месечно искуство во странство,
+                                    одлична и добро платена работа и најдобар распуст, ИСТОВРЕМЕНО!<br><br>
+
+                                    Нашиот систем ви нуди голем број на добро детализирани работи надвор од државата,
+                                    за кои може да аплицирате многу лесно. Се што ви треба е да пополните едноставна форма
+                                    и да обезбедите потребни документи - и се што ви преостанува е да чекате да бидете повикани
+                                    на интервју.
+                                </div>
+
+                                <div class="col-md-6">
+                                    Ние сме секогаш во потрага по нови, апасионирани членови кои континуирано би работеле
+                                    за нашата заедница. Добродојдени се сите тие кои што сакаат да учествуваат во ваков проект
+                                    и да контрибуираат на нешто што задоволува голем број на луѓе, да се забавува со нас, исто така
+                                    и да патува по различни држави по потрага на нови работни места.<br><br>
+                                    <i>-Симона</i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="supporters">
+                    <div class="text-center">
+                        <i class="small">реализација</i>
+                        <h3 class="members-overview-top">Подржувачи</h3>
                         <br>
-                        Да ви овозможеме незаборавно неколку месечно искуство во странство,
-                        одлична и добро платена работа и најдобар распуст, ИСТОВРЕМЕНО!<br><br>
-
-                        Нашиот систем ви нуди голем број на добро детализирани работи надвор од државата,
-                        за кои може да аплицирате многу лесно. Се што ви треба е да пополните едноставна форма
-                        и да обезбедите потребни документи - и се што ви преостанува е да чекате да бидете повикани
-                        на интервју.
+                        <br>
                     </div>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <img src="img/vlada.jpg" width="300" >
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/wizz.jpg" width="200">
+                        </div>
 
-                    <div class="col-md-6">
-                        Ние сме секогаш во потрага по нови, апасионирани членови кои континуирано би работеле
-                        за нашата заедница. Добродојдени се сите тие кои што сакаат да учествуваат во ваков проект
-                        и да контрибуираат на нешто што задоволува голем број на луѓе, да се забавува со нас, исто така
-                        и да патува по различни држави по потрага на нови работни места.<br><br>
-                        <i>-Симона</i>
                     </div>
-
                 </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <div class="container supporters">
-        <div class="text-center">
-            <i class="small">реализација</i>
-            <h3 class="members-overview-top">Подржувачи</h3>
-            <br>
-            <br>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-6">
-                <img src="img/vlada.jpg" width="300" >
-            </div>
-            <div class="col-md-6">
-                <img src="img/wizz.jpg" width="200">
             </div>
 
         </div>
     </div>
+</div>
+
+
+</main>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="footer-text">DIGIT 2016</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="footer-menu">
+                    <li><a href="./about_us.html">За нас</a></li>
+                    <li><a href="./advanced_search.html">Пребарување</a></li>
+                    <li><a href="./log_in.html">Најава</a></li>
+                    <li><a href="./register.html">Регистрација</a></li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="www.facebook.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="www.facebook.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+</div>
+<!--Scripts-->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/jquery.easy-autocomplete.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/team.js"></script>
 
 </body>
 </html>
