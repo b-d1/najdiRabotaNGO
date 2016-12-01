@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
 }
 
 input {
@@ -45,7 +46,23 @@ nav {
 }
 nav li a {
     color:white;
-    font-size:17px;
+    font-size:18px;
+}
+
+.bars-icon-others {
+    color:white;
+}
+
+#bs-example-navbar-collapse-1 {
+    overflow-x:hidden;
+}
+
+.dropdown-menu {
+    background-color: #424242 !important;
+}
+
+#main-navigation-icon {
+    color: #2aabd2;
 }
 
 
@@ -116,10 +133,6 @@ nav li a {
     margin-right: auto;
     width: 80%;
     margin-top: 15px;
-}
-
-#testimonial1 .col-md-10, #testimonial3 .col-md-10, #testimonial2 .col-md-10  {
-    border-left: 1px solid #e6e6e6;
 }
 
 
@@ -393,6 +406,10 @@ select {
     position:relative;
 }
 
+#nav-others-main li a {
+    color:white;
+}
+
 .others-menu {
     /*background-color: #f9f9f9;*/
     background-image: url('../img/greyzz.png');
@@ -420,12 +437,12 @@ select {
 
 /* Media queries */
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 767px)  {
     nav {
         background-color:white;
     }
     .main-navbar li a {
-        color:black;
+        color:#2aabd2;
     }
 
 
@@ -434,9 +451,24 @@ select {
         border-bottom: 1px solid #e4e4e4;
     }
 
+    #nav-others-main {
+        overflow: hidden !important;
+    }
+
+    #nav-others-main li a {
+        padding-left: 30px;
+    }
+
+    #nav-others-main li a:hover {
+        text-decoration:none !important;
+        color:white !important;
+        background-color: rgba(128, 128, 128, 0.89) !important;
+    }
+
 }
 
 @media screen and (min-width: 768px)  {
+
 
     nav li a:hover {
         background: transparent !important;

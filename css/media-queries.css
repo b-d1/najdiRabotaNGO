@@ -1,0 +1,103 @@
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+    .input-search {
+        max-width:75%;
+    }
+}
+
+
+@media only screen and (min-width: 993px) {
+    #testimonial1 .col-md-10, #testimonial3 .col-md-10, #testimonial2 .col-md-10 {
+        border-left: 1px solid #e6e6e6;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+    .home-search-area h1 {
+        font-size: 40px;
+    }
+
+    .input-search {
+        display: inline-block;
+        width: 60%;
+        float: left;
+        margin-right: 10px;
+        margin-left: 10%;
+    }
+
+    .testimonial-photo {
+        width:200px;
+    }
+
+    nav li a {
+        font-size: 16px;
+    }
+    .home-section-header {
+        font-size:25px;
+    }
+
+    .testimonial-name {
+        font-size:22px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+    .home-search-area h1 {
+        font-size: 35px;
+    }
+}
+
+
+@media only screen and (max-width : 580px){
+    .input-search {
+        margin-left: 5% !important;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+    .input-search {
+        width: 80%;
+        float: none !important;
+        margin-left:0 !important;
+    }
+    #index-search-container {
+        text-align: center !important;
+    }
+    .home-search-area h1 {
+        font-size: 27px;
+    }
+    .home-search-area {
+        margin-top: 190px;
+    }
+    .hero-area {
+        height: 500px;
+    }
+    #main-search {
+        height:40px;
+    }
+    .btn-lg {
+        font-size:15px;
+    }
+    .star-container-col {
+        display: block;
+        width: 100%;
+        float: left;
+        text-align: left;
+    }
+    .stars-container {
+        margin-top:0;
+        margin-bottom:20px;
+    }
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" >
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"  />
+    <link rel="stylesheet" href="css/media-queries.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/awesomplete.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -18,7 +19,7 @@
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-bars" aria-hidden="true" id="main-navigation-icon"></i>
 
         </button>
         <a class="navbar-brand" href="#">Logo</a>
@@ -48,10 +49,10 @@
                 <h1 class="text-center">Работи во <span>странство</span> во три чекори.</h1>
             </div>
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2" id="index-search-container">
                     <form action="" method="post">
                         <div class="form-group input-search form-group-lg">
-                            <input type="text" name="Search" placeholder="Држава.." class="form-control awesomplete" list="mylist" />
+                            <input type="text" name="Search" placeholder="Држава.." class="form-control awesomplete" list="mylist" id="main-search"/>
                             <datalist id="mylist">
                                 <option value="Германија">Германија</option>
                                 <option value="Англија">Англија</option>
@@ -63,7 +64,7 @@
                                 <option value="Австрија">Австрија</option>
                             </datalist>
                         </div>
-                        <button name="submit" class="btn btn-primary btn-search btn-lg">Пребарај</button>
+                        <button name="submit" class="btn btn-primary btn-search btn-lg"><i class="fa fa-search"></i> Пребарај</button>
                     </form>
                 </div>
             </div>
@@ -83,10 +84,10 @@
                 </div>
                 <div class="col-md-10">
                     <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-xs-2">
                             <h3 class="testimonial-name">Име</h3>
                         </div>
-                        <div class="col-lg-10 text-right">
+                        <div class="col-xs-10 text-right star-container-col">
                             <div class="stars-container">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -109,10 +110,10 @@
                 </div>
                 <div class="col-md-10">
                     <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-xs-2">
                             <h3 class="testimonial-name">Име</h3>
                         </div>
-                        <div class="col-lg-10 text-right">
+                        <div class="col-xs-10 text-right star-container-col">
                             <div class="stars-container">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -136,10 +137,10 @@
                 </div>
                 <div class="col-md-10">
                     <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-xs-2">
                             <h3 class="testimonial-name">Име</h3>
                         </div>
-                        <div class="col-lg-10 text-right">
+                        <div class="col-xs-10 text-right star-container-col">
                             <div class="stars-container">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
