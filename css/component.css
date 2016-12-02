@@ -182,7 +182,7 @@
 }
 
 .apply-cancel-button{
-    border:2px solid #2aabd2;
+    border:1px solid #2aabd2;
     background-color: white;
     width: 180px;
     height:45px;
@@ -192,7 +192,7 @@
 
 .apply-cancel-button:hover{
     color: #2b669a;
-    border:3px solid #2b669a;
+    border:1px solid #2b669a;
 }
 
 textarea {
@@ -229,6 +229,7 @@ textarea {
     height:45px;
     color: white;
     font-size:25px;
+    box-shadow:  0 2px 0px 0px #d8d8d8;
 }
 
 .apply_now:hover{
@@ -237,7 +238,9 @@ textarea {
 
 .the_job{
     font-size: 18px;
-    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+
 }
 
 .the_job i{

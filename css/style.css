@@ -11,6 +11,11 @@ button {
     border-radius: 0 !important;
 }
 
+.well {
+    border: 0 !important;
+    border-radius:0 !important;
+}
+
 .about-link {
     border-radius: 0 !important;
     box-shadow:  0 2px 0px 0px #d8d8d8;
@@ -40,29 +45,36 @@ h1 span {
     font-family: 'Roboto', sans-serif !important;
     font-weight:700 !important;
     background-color:#2aabd2;
-    padding:0px 13px;
+    padding-top: 3px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 5px;
 }
 
 nav {
-    position: absolute;
     width: 100%;
+    transition: all 0.2s ease-in-out;
+    position:fixed;
+    z-index: 999;
 }
 nav li a {
     color:white;
-    font-size:18px;
+    font-size:17px;
 }
 
 .bars-icon-others {
     color:white;
 }
 
-#bs-example-navbar-collapse-1 {
-    overflow-x:hidden;
-}
+
+
+
 
 .dropdown-menu {
     background-color: #424242 !important;
+    left: -74px !important;
 }
+
 
 #main-navigation-icon {
     color: #2aabd2;
@@ -93,6 +105,9 @@ nav li a {
 
 .btn-search {
     background-color:#2aabd2 !important;
+    border-radius: 0 !important;
+    /*box-shadow: 0 2px 0px 0px #f6f6f633;*/
+
 }
 
 .home-section-header {
@@ -130,7 +145,7 @@ nav li a {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    margin-top: 15px;
+    margin-top: 0;
 }
 
 
@@ -237,13 +252,13 @@ select {
 
 .advanced_search_dialog{
     /*background-color: white;margin-top:10%;*/
-    padding: 7% 8%;
+    padding: 2% 8%;
     /*border: 2px solid lightgray;*/
 
 }
 
 .advanced_search_form{
-    width: 90%;
+    width: 100%;
 }
 
 .advanced_search_input{
@@ -395,7 +410,10 @@ select {
 
 .nav-others {
     background-color:#424242;
-    position:relative;
+}
+
+.main-others {
+    padding-top:50px;
 }
 
 #nav-others-main li a {
@@ -425,17 +443,17 @@ select {
 
 @media screen and (max-width: 767px)  {
     nav {
-        background-color:white;
+        background-color: transparent;
     }
 
     .main-navbar li a {
-        color:#2aabd2;
+        color:white;
     }
 
 
 
     .navbar-header {
-        border-bottom: 1px solid #e4e4e4;
+        /*border-bottom: 1px solid #e4e4e4;*/
     }
 
     #nav-others-main {
@@ -460,12 +478,7 @@ select {
     nav li a:hover {
         background: transparent !important;
         color: white !important;
-        text-decoration: underline #2aabd2 !important;
-    }
-    nav li a:hover {
-        background: transparent !important;
-        color: white !important;
-        text-decoration: underline #2aabd2 !important;
+        text-decoration: underline white !important;
     }
 
     #nav-others-main li a:hover {
@@ -603,3 +616,113 @@ select {
     background-color:  #2b669a;
     border-color:  #2b669a;
 }
+
+footer {
+    position:relative;
+    width:100%;
+    bottom:0;
+}
+
+/* User details*/
+.user-details {
+    font-weight: 700;
+}
+
+.user-photo-col {
+
+    margin-top:15px;
+}
+
+.user-avatar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.user-controls {
+    margin-top: 15px;
+}
+.user-controls a {
+    display:block;
+    margin-bottom:7px;
+}
+
+.user-info-col {
+    padding-left: 45px !important;
+    margin-top: 12px;
+    border-left:1px solid #eee;
+}
+
+.application-details-row {
+    padding: 10px;
+    /*border-bottom: 1px solid #eeeeee;*/
+    border: 1px solid #eeeeee;
+    margin:5px;
+}
+
+.user-body-container-row {
+    margin-left:5px !important;
+    margin-right:15px !important;
+}
+
+.details-details-row {
+    margin-bottom:50px;
+}
+
+.h3-profile {
+    /*color: #2aabd2;*/
+    padding-left: 24px;
+}
+
+#spodeleni-iskustva {
+    margin-top:50px;
+}
+
+.button-controls-container {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.application-details {
+    font-weight:700;
+}
+
+.prikazi-btn {
+    border-radius: 0 !important;
+    background-color: #2aabd2 !important;
+    border-color: #2aabd2 !important;
+    box-shadow:  0 2px 0px 0px #d8d8d8;
+}
+
+.prikazi-btn:hover {
+    border-radius: 0 !important;
+    background-color: #2b669a !important;
+}
+
+.odobrena-aplikacija {
+    float:right;
+    font-size:15px;
+    color:green;
+    margin-top:2px;
+}
+
+.ne-odobrena-aplikacija {
+    float:right;
+    font-size:15px;
+    color:#e97f7c;
+    margin-top:2px;
+}
+
+
+.izbrisi-btn {
+    border-radius: 0 !important;
+    background-color:#e97f7c;
+    border-color: #e97f7c !important;
+    box-shadow:  0 2px 0px 0px #d8d8d8;
+}
+
+
+.colored {
+     background-color:#424242 !important;
+ }
+

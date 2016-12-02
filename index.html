@@ -7,36 +7,84 @@
     <link rel='icon' href='./img/logo.ico' type='image/x-icon' >
     <link rel="stylesheet" href="css/style.css" type="text/css" >
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"  />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/awesomplete.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
+<style>
+    .navbar-brand{
+        font-family: 'Roboto', sans-serif;
+        color: #2aabd2;
+        font-size: 25px;
+    }
+    .navbar-brand:hover{
+
+        text-decoration: underline;
+        color: white;
+    }
+</style>
 <body>
+
 <!-- ==================== Navbar ==================== -->
 
-<nav>
+<nav id="nav-default">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
-            <i class="fa fa-bars" aria-hidden="true" id="main-navigation-icon"></i>
+            <i class="fa fa-bars bars-icon-others" id="bars-home" aria-hidden="true"></i>
 
         </button>
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="./index.html"><span style="color:white;">WORK</span>abroad</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <div class="container-fluid">
-        <div class="row">
+        <div class="container-fluid">
+            <div class="row">
                 <ul class="nav navbar-nav main-navbar">
-                    <li><a href="#">За нас</a></li>
-                    <li><a href="#">Најава</a></li>
-                    <li><a href="#">Регистрација</a></li>
+                    <li><a href="./about_us.html">За нас</a></li>
+                    <li><a href="./log_in.html">Најава</a></li>
+                    <li><a href="./register.html">Регистрација</a></li>
                 </ul>
+            </div>
         </div>
     </div>
+</nav>
+
+
+<nav class="nav-others" id="nav-others">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars bars-icon-others" aria-hidden="true"></i>
+
+            </button>
+            <a class="navbar-brand" href="./index.html"><span style="color:white;">WORK</span>abroad</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <div class="row dropdown-row">
+                <ul class="nav navbar-nav main-navbar" id="nav-others-main">
+                    <li><a href="advanced_search.html"><i class="fa fa-search"></i>
+                        Пребарувај</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="korisnickoIme1">Корисничко име </span><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>
+                                Профил</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="logout.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                                Одјави се</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </nav>
+
 
 <!-- ==================== /Navbar ==================== -->
 
@@ -49,7 +97,7 @@
                 <h1 class="text-center">Работи во <span>странство</span> во три чекори.</h1>
             </div>
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2" id="index-search-container">
                     <form>
                         <div class="form-group input-search form-group-lg">
                             <input type="text" name="Search" placeholder="Држава.." class="form-control awesomplete index-country" list="mylist" />
@@ -64,7 +112,8 @@
                                 <option value="Австрија">Австрија</option>
                             </datalist>
                         </div>
-                        <input type="button" value="Пребарај" onclick="writeCountry()" class="btn btn-primary btn-search btn-lg">
+                        <a onclick="writeCountry()" class="btn btn-primary btn-search btn-lg"><i class="fa fa-search" aria-hidden="true"></i>
+                         Пребарај</a>
                     </form>
                 </div>
             </div>
@@ -98,10 +147,10 @@
                         </div>
                     </div>
                     <p class="text-small">
-                        Рабоотел за <span class="span-rabotodavac">News Media corp.</span>
+                        Работела за <span class="span-rabotodavac">News Media corp.</span>
                     </p>
                     <p class="testimonials-text">
-                    Наједноставно кажано, сум презадоволна од работата за News Media corp. во Лондон. Благодарение на дечките успеав да заработам доволно за да можам да патувам низ светот, и да си се журкам низ Скопје.</p>
+                    Наједноставно кажано, сум презадоволна од работата за News Media corp. во Лондон. Благодарение на WORKabroad успеав да заработам доволно за да можам да патувам низ светот, и да си се журкам низ Скопје.</p>
                 </div>
             </div>
             <hr />
@@ -125,7 +174,7 @@
                         </div>
                     </div>
                     <p class="text-small">
-                        Рабоотел за <span class="span-rabotodavac">Delite Construction</span>.
+                        Работел за <span class="span-rabotodavac">Delite Construction</span>.
                     </p>
                     <p class="testimonials-text">
                         Воодушевен сум. Ја најдов омилената работа на најбрз начин и можев да се забавувам во Германија. Наредно лето повторно ке аплицирам!
@@ -154,10 +203,10 @@
                         </div>
                     </div>
                     <p class="text-small">
-                        Рабоотел за <span class="span-rabotodavac">Johnsson Matthey</span>.
+                        Работел за <span class="span-rabotodavac">Johnsson Matthey</span>.
                     </p>
                     <p class="testimonial-text">
-                        Одлично искуство, одлична работа! Сега можам да си купам кола, благодарение на дечките од workabroad.
+                        Одлично искуство, одлична работа! Сега можам да си купам кола, благодарение на дечките од workabroad. Планирам повторно да ја искористам можноста следната година, и им препорачувам и на сите заинтересирани луѓе да го направат истото.
                     </p>
                 </div>
             </div>
@@ -188,19 +237,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="footer-text">DIGIT 2016</p>
+                <p class="footer-text"><strong>WORKabroad</strong> 2016</p>
             </div>
             <div class="col-md-6">
                 <ul class="footer-menu">
                     <li><a href="./about_us.html">За нас</a></li>
                     <li><a href="./advanced_search.html">Пребарување</a></li>
-                    <li><a href="./log_in.html">Најава</a></li>
-                    <li><a href="./register.html">Регистрација</a></li>
+                    <li class="login_register"><a href="./log_in.html">Најава</a></li>
+                    <li class="login_register"><a href="./register.html">Регистрација</a></li>
                 </ul>
                 <ul class="social-icons">
-                    <li><a href="www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                    <li><a href="www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="www.twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
 
@@ -212,7 +261,11 @@
 
 
 
-
+<style>
+    #nav-others {
+        background-color:transparent;
+    }
+</style>
 
 
 <script src="js/jquery-3.1.1.min.js"></script>
@@ -252,7 +305,6 @@
     function writeCountry(){
         var country = $(".index-country").val();
         if(country.length<1){
-            console.log("fuck jankos mama");
             $(".index-country").addClass("animated shake");
 
             setTimeout(function(){
@@ -266,6 +318,33 @@
             window.location.href="./advanced_search.html";
         }
     }
+
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 750) {
+            $("nav").addClass("colored");
+            $("#nav-others").addClass("colored");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+            $("nav").removeClass("colored");
+            $("#nav-others").removeClass("colored");
+        }
+    });
+
+
+    var userName = localStorage.getItem("userName");
+    if(userName !== null) {
+        document.getElementById("korisnickoIme1").textContent=userName;
+        $("#nav-others").show();
+        $("#nav-default").hide();
+        $(".login_register").hide();
+    }
+    else {
+        $("#nav-others").hide();
+        $("#nav-default").show();
+        $(".login_register").show();
+    }
+
+
 
 </script>
 

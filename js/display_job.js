@@ -28,21 +28,21 @@ function render(jobs,jobID){
 
 
 
-            var display = "<div class='the_job'><p><i>Место: </i>"+ city +","+ country +"</p>"+
-                "<p><i>Плата:</i> " + salary + "</p>"+
-                "<p><i>Работно време:</i> " + time + "</p>"+
-                "<p><i>Работодавец:</i> " + employer + "</p>"+
-                "<p><i>Опис:</i></p>"+
+            var display = "<div class='the_job'><p>Место:  <strong>"+ city +","+ country +"</strong></p>"+
+                "<p>Плата: <strong>" + salary + "</strong></p>"+
+                "<p>Работно време: <strong>" + time + "</strong></p>"+
+                "<p>Работодавец: <strong>" + employer + "</strong></p>"+
+                "<p>Опис:</p>"+
                 "<p>" + description + "</p>"+
-                "<p><i>Потребни документи:</i></p>"+
+                "<p>Потребни документи:</p>"+
                 docsNeeded+
-                "<p>Дали сте спремни? <br><br>  <input type='button' value='Аплицирај' class='apply_now'></p>"+
+                "<p>Дали сте спремни? <br><br>  <button type='button' class='apply_now'>Аплицирај</button></p>"+
                 "<br>"+
-                "<hr></div> ";
+                "</div> ";
 
             //render and break;
             $(".main_page_display_job").append(display);
-            $(".text-header-others").text(title);
+            $(".text-header-others span").text(title);
             return;
         }
     }

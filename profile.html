@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel='icon' href='./img/logo.ico' type='image/x-icon' >
-    <title>Напредно пребарување</title>
+    <title>Профил</title>
 
     <!--Styles-->
     <link rel="stylesheet" href="css/style.css" type="text/css" >
+    <link rel="stylesheet" href="css/media-queries.css" type="text/css" >
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"  />
     <link rel="stylesheet" href="css/easy-autocomplete.min.css">
-    <link rel="stylesheet" href="css/awesomplete.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
@@ -19,11 +19,10 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
-
     <script src="js/advanced_search.js"></script>
     <script src="js/jquery.easy-autocomplete.min.js"></script>
     <script src="js/jquery.paginate.min.js"></script>
-    <script src="js/awesomplete.min.js"></script>
+
     <script type="text/javascript">
 
     </script>
@@ -44,20 +43,6 @@
         .job-title-link:hover{
             cursor: pointer;
         }
-        .footer-class {
-            position:fixed !important;
-            bottom:0 !important;
-            width:100% !important;
-        }
-
-       .main-others .job-body {min-height: 400px; }
-
-        @media only screen and (max-width : 480px){
-            #search-icon-advanced {
-                display:none;
-            }
-        }
-
     </style>
 </head>
 <body class="others-menu">
@@ -126,103 +111,105 @@
     <div class="container">
         <div class="row job-title-row">
             <div class="col-md-12">
-                <h2 class="text-header-others"><i class="fa fa-search"></i> Напредно пребарување</h2>
+                <h2 class="text-header-others"><i class="fa fa-user"></i> <span id="korisnickoIme">Корисничко име</span></h2>
             </div>
         </div>
         <ol class="breadcrumb">
             <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i>
                 Почетна</a></li>
-            <li class="active">Напредно пребарување</li>
+            <li class="active"><span id="korisnickoIme2">Корисничко име</span></li>
         </ol>
         <div class="job-body">
             <div class="job-body-header">
 
             </div>
             <div class="job-body-main">
+            <div class="row">
+                <div class="col-md-3 user-photo-col">
+                    <img src="img/user3.jpeg" alt="Testimonial photo" class="user-avatar img-responsive img-circle">
+                </div>
+                <div class="col-md-9 user-info-col">
+                    <h3><i class="fa fa-user" aria-hidden="true"></i>
+                         Информации за профилот</h3>
 
-                <div class="advanced_search_dialog" >
-                    <!--Search Filters-->
-                    <h4>Критериуми за пребарување: </h4>
-                    <div class="filter_results">
-                        <div class="input-group advanced_search_form">
-                            <input type="text" class="form-control advanced_search_input" placeholder="Пребарај Држава" value="England">
-                            <span class="input-group-btn" >
-                    <button class="btn btn-default advanced_search_button" type="button" id="button123" ><i class="fa fa-search" id="search-icon-advanced"></i> Пребарај</button>
-                  </span>
-                        </div><!-- /input-group -->
+                    <p>E-mail: <span class="user-details">blagojd1@gmail.com</span>. </p>
+                    <p>Член од: <span class="user-details">01, Декември 2014</span>. </p>
 
-                        <br>
-                        <br>
-
-
-                        <div>
-                            <p>Напредни филтри:</p>
-                        </div>
-                        <!--Filters-->
-                        <select class="search_choose_city">
-                            <!--Options added based on country-->
-                        </select>
-
-
-                        <select class="search_choose_category">
-                            <option value="hide">
-                                Изберете категорија
-                            </option>
-                            <option id="Housekeeper" value="Чистачка">
-                                Чистачка
-                            </option>
-                            <option id="Hostess" value="Хостеса">
-                                Хостеса
-                            </option>
-                            <option id="Waiter" value="Келнер">
-                                Келнер
-                            </option>
-                            <option id="Electrician" value="Електричар">
-                                Електричар
-                            </option>
-                            <option id="Maintenance" value="Одржување">
-                                Одржување
-                            </option>
-                            <option id="Babysitter" value="Бејбиситер">
-                                Бејбиситер
-                            </option>
-                            <option id="Mechanic" value="Механичар">
-                                Механичар
-                            </option>
-                        </select>
-
-
+                    <div class="user-controls">
+                    <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                         Промени e-mail.</a>
+                    <a href="#"><i class="fa fa-key" aria-hidden="true"></i>
+                         Промени лозинка.</a>
+                    <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>
+                         Промени слика на профилот.</a>
                     </div>
+                </div>
+            </div>
+                <hr>
+                <div class="row user-body-container-row">
+               <div class="col-md-12"><h3 class="h3-profile"><i class="fa fa-file-text" aria-hidden="true"></i>
+                    Мој апликации</h3></div>
+                <div class="col-md-12 application-details-row">
+                    <div class="col-md-12">
+                        <h4 class="application-status-container">Апликација #2 <span class="ne-odobrena-aplikacija">
+ <i class="fa fa-times-circle" aria-hidden="true"></i>
+ Одбиена апликација</span></h4>
+                        <p>Работно место: <span class="application-details">Одржување</span></p>
+                        <p>Поднесена на: <span class="application-details">08.11.2016</span></p>
+                        <p>Одржување и поправка на електрична енергија, комуникации, осветлување, и контрола на системи во своите домови..</p>
 
-                    <hr class="split">
-                    <div class="jobs_found">
-                        <div class="found">
-                    <span class="success_message_found">
-
-                    </span>
+                        <div class="button-controls-container">
+                            <a href="#" class="btn btn-primary prikazi-btn"><i class="fa fa-list" aria-hidden="true"></i>
+                                Прикажи целосно</a>
+                            <a href="#" class="btn btn-danger izbrisi-btn"><i class="fa fa-trash" aria-hidden="true"></i>
+                                Избриши</a>
                         </div>
-                        <div class="not_found">
-                            <span class="error_meesage_not_found"></span>
+                    </div>
+                </div>
+                <div class="col-md-12 application-details-row">
+                    <div class="col-md-12">
+                        <h4 class="application-status-container">Апликација #1 <span class="odobrena-aplikacija"><i class="fa fa-check-circle" aria-hidden="true"></i>
+ Одобрена апликација</span></h4>
+                        <p>Работно место: <span class="application-details">Механичар</span></p>
+                        <p>Поднесена на: <span class="application-details">05.10.2015</span></p>
+                        <p>Ми треба соучесник да ми помага за одредување на автомобили и автомобилски делови..</p>
 
+                        <div class="button-controls-container">
+                            <a href="#" class="btn btn-primary prikazi-btn"><i class="fa fa-list" aria-hidden="true"></i>
+                                Прикажи целосно</a>
+                            <a href="#" class="btn btn-danger izbrisi-btn"><i class="fa fa-trash" aria-hidden="true"></i>
+                                Избриши</a>
                         </div>
 
                     </div>
-                    <!--Results-->
-                    <div class="show_results" id="res">
-
-
-                    </div>
-
                 </div>
 
-            </div>
+                <div class="col-md-12"><h3 class="h3-profile" id="spodeleni-iskustva"><i class="fa fa-comments" aria-hidden="true"></i>
+                     Споделени искуства</h3></div>
+                <div class="col-md-12 application-details-row details-details-row">
+                    <div class="col-md-12">
+                    <h4>Искуство во врска со апликација #1</h4>
+                    <p>Поднесено на: <span class="application-details">05.06.2016</span></p>
+                        <p>Оценка: <span class="application-details">4.5</span></p>
+                    <p>Одлично искуство, одлична работа! Сега можам да си купам кола, благодарение на дечките од workabroad...</p>
+
+                        <div class="button-controls-container">
+                            <a href="#" class="btn btn-primary prikazi-btn"><i class="fa fa-list" aria-hidden="true"></i>
+                                Прикажи целосно</a>
+                            <a href="#" class="btn btn-danger izbrisi-btn"><i class="fa fa-trash" aria-hidden="true"></i>
+                                Избриши</a>
+                        </div>
+                </div>
+                </div>
+                </div>
         </div>
+    </div>
     </div>
 
 
 </main>
 
-<footer id="footer1">
+<footer>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -251,41 +238,29 @@
     <i class="fa fa-arrow-up" aria-hidden="true"></i>
 </div>
 
-
-
-
+<!--<script src="js/jquery-3.1.1.min.js"></script>-->
+<!--<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
+<!--<script src="js/awesomplete.min.js"></script>-->
 <script>
-
     $(document).ready(function() {
-        var userName = localStorage.getItem("userName");
-        var searchResult = localStorage.getItem("country");
-        console.log(userName);
-        if(userName !== null) {
-            document.getElementById("korisnickoIme1").textContent=userName;
-            $("#nav-others").show();
-            $("#nav-default").hide();
-            $(".login_register").hide();
-        }
+        localStorage.removeItem("country");
+       var userName = localStorage.getItem("userName");
+       if(userName !== undefined) {
+           document.getElementById("korisnickoIme").textContent=userName;
+           document.getElementById("korisnickoIme1").textContent=userName;
+           document.getElementById("korisnickoIme2").textContent=userName;
+           $("#nav-others").show();
+           $("#nav-default").hide();
+           $(".login_register").hide();
+       }
         else {
             $("#nav-others").hide();
             $("#nav-default").show();
-            $(".login_register").show();
+           $(".login_register").show();
         }
 
-        if(searchResult == null) {
-            $("footer").addClass("footer-class");
-        }
-        else {
-            $("footer").css("position", "relative");
-        }
-        $("#button123").click(function () {
-           if(searchResult == null) {
-               $("footer").removeClass("footer-class");
-           }
-        });
-
-    })
-
+       console.log(userName);
+    });
 </script>
 </body>
 </html>

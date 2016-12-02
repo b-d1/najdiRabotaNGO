@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/component.css">
     <style>
         .navbar-brand{
-            font-family: 'Arial';
+            font-family: 'Roboto', sans-serif;
             color: #2aabd2;
             font-size: 25px;
         }
@@ -35,6 +35,16 @@
 
 
     <style>
+        @media only screen and (max-width : 768px) {
+            #bs-example-navbar-collapse-1 .row, #bs-example-navbar-collapse-2 .row {
+                overflow-x: hidden;
+            }
+        }
+
+
+        label {
+            font-weight:400 !important;
+        }
 
         .error-sign-up {
             border: solid red 1px;
@@ -64,6 +74,7 @@
             height: 45px;
             color: white;
             font-size: 18px;
+            box-shadow:  0 3px 0px 0px #d8d8d8;
         }
 
         .apply-button:hover {
@@ -91,6 +102,9 @@
         .well{
             background-color: white !important;
         }
+
+
+
     </style>
 
     <title>Регистирај се</title>
@@ -101,11 +115,11 @@
         <!-- ==================== Navbar ==================== -->
 
         <nav class="nav-others">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <i class="fa fa-bars bars-icon-others" aria-hidden="true"></i>
 
                     </button>
                     <a class="navbar-brand" href="./index.html"><span style="color:white;">WORK</span>abroad</a>
@@ -129,7 +143,8 @@
             <div class="container">
                 <div class="row job-title-row">
                     <div class="col-md-6">
-                        <h2 class="text-header-others">Регистрирај се</h2>
+                        <h2 class="text-header-others"><i class="fa fa-user-plus" aria-hidden="true"></i>
+                             Регистрирај се</h2>
                     </div>
                 </div>
                 <br>
@@ -321,7 +336,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="footer-text">DIGIT 2016</p>
+                        <p class="footer-text"><strong>WORKabroad</strong> 2016</p>
                     </div>
                     <div class="col-md-6">
                         <ul class="footer-menu">
@@ -331,9 +346,9 @@
                             <li><a href="./register.html">Регистрација</a></li>
                         </ul>
                         <ul class="social-icons">
-                            <li><a href="www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                            <li><a href="www.facebook.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="www.facebook.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
 
@@ -349,6 +364,12 @@
 
         $(document).ready(function() {
 
+            var userName = localStorage.getItem("userName");
+            if(userName !== null) {
+               window.location.href="index.html";
+            }
+
+            localStorage.removeItem("country");
             //DATEPICKER
             $('#dob').datepicker({
                 format: "dd MM yyyy",

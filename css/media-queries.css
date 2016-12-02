@@ -41,6 +41,14 @@
     .testimonial-name {
         font-size:22px;
     }
+    .user-avatar {
+        width:250px;
+    }
+    .user-photo-col {
+        /*border-bottom:1px solid #eeeeee;*/
+        padding-bottom:15px;
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -48,6 +56,23 @@
     .home-search-area h1 {
         font-size: 35px;
     }
+    .dropdown-row {
+        overflow-x:hidden;
+    }
+    #bs-example-navbar-collapse-1 .row, #bs-example-navbar-collapse-2 .row {
+        overflow-x:hidden;
+    }
+    #search-icon-advanced {
+        display:none;
+    }
+    #bars-home {
+        color:white;
+    }
+    .nav > li > a:focus, .nav > li > a:hover {
+        background-color:transparent;
+        text-decoration:1px solid white;
+    }
+
 }
 
 
@@ -55,6 +80,10 @@
     .input-search {
         margin-left: 5% !important;
     }
+    .user-info-col h3 {
+        font-size:20px;
+    }
+
 
 }
 
@@ -93,8 +122,34 @@
         margin-top:0;
         margin-bottom:20px;
     }
+    .button-controls-container {
+        text-align:center;
+    }
+    .button-controls-container a {
+        display:block;
+        margin-bottom:5px;
+    }
 
+    .user-avatar {
+        width:180px;
+    }
 
+}
+
+@media only screen and (max-width: 409px) {
+    .ne-odobrena-aplikacija {
+        margin-top:10px;
+        float:left;
+        display:block;
+    }
+    .odobrena-aplikacija {
+        margin-top:10px;
+        float:left;
+    }
+
+    .application-status-container {
+        margin-bottom:35px;
+    }
 }
 
 /* Custom, iPhone Retina */

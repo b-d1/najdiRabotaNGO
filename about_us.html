@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/component.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <style>
         .navbar-brand{
-            font-family: 'Arial';
+            font-family: 'Roboto', sans-serif;
             color: #2aabd2;
             font-size: 25px;
         }
@@ -26,24 +27,66 @@
             text-decoration: underline;
             color: white;
         }
+
+
+        @media(max-width: 767px) {
+            .supporters div:nth-child(2) > div > img {
+                width: 50%;
+                display: inline;
+            }
+
+            .supporters div:nth-child(2) > div:nth-child(2) > img {
+                margin-top: 3em;
+            }
+            #bs-example-navbar-collapse-1 .row, #bs-example-navbar-collapse-2 .row {
+                overflow-x:hidden;
+            }
+
+        }
+
+        @media(max-width: 500px) {
+            .supporters div:nth-child(2) > div > img {
+                width: 80%;
+                display: inline;
+            }
+
+            .supporters div:nth-child(2) > div:nth-child(2) > img {
+                margin-top: 3em;
+            }
+        }
+
+        @media(max-width: 400px) {
+            .supporters div:nth-child(2) > div > img {
+                width: 1000%;
+                display: inline;
+            }
+
+            .supporters div:nth-child(2) > div:nth-child(2) > img {
+                margin-top: 3em;
+            }
+        }
+
+
+
+
     </style>
 </head>
 <body class="others-menu">
 
 <!-- ==================== Navbar ==================== -->
 
-<nav class="nav-others">
-    <div class="container">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <i class="fa fa-bars" aria-hidden="true"></i>
+<nav class="nav-others" id="nav-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars bars-icon-others" aria-hidden="true"></i>
 
-        </button>
-        <a class="navbar-brand" href="./index.html"><span style="color:white;">WORK</span>abroad</a>
-    </div>
+            </button>
+            <a class="navbar-brand" href="./index.html"><span style="color:white;">WORK</span>abroad</a>
+        </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <div class="row">
                 <ul class="nav navbar-nav main-navbar" id="nav-others-main">
                     <li><a href="./about_us.html">За нас</a></li>
@@ -55,16 +98,48 @@
     </div>
 </nav>
 
+<nav class="nav-others" id="nav-others">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars bars-icon-others" aria-hidden="true"></i>
+
+            </button>
+            <a class="navbar-brand" href="./index.html"><span style="color:white;">WORK</span>abroad</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <div class="row dropdown-row">
+                <ul class="nav navbar-nav main-navbar" id="nav-others-main">
+                    <li><a href="advanced_search.html"><i class="fa fa-search"></i>
+                        Пребарувај</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="korisnickoIme1">Корисничко име </span><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>
+                                Профил</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="logout.html"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                                Одјави се</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
 <!-- ==================== /Navbar ==================== -->
 
 <main class="main-others">
 <div class="container">
     <div class="row job-title-row">
-        <div class="col-md-6">
-            <h2 class="text-header-others">За нас</h2>
+        <div class="col-md-12">
+            <h2 class="text-header-others"><i class="fa fa-"></i><i class="fa fa-users" aria-hidden="true"></i>
+                За нас</h2>
         </div>
     </div>
-    <br>
         <ol class="breadcrumb">
             <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i>
                  Почетна</a></li>
@@ -89,7 +164,7 @@
                                     <img src="img/member.png" name="Симона" role="Контрактор">
                                     <div class="details" style="display: none">
                                         <h3>Симона</h3>
-                                        <p>Контрактор</p>
+                                        <p>Договарач</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-xs-12  col-md-3  team-member">
@@ -116,7 +191,7 @@
                             </div>
 
                             <div class="col-md-12 text-center">
-                                <h3>Апасионирани членови</h3>
+                                <h3>Мотивирани членови</h3>
                                 <hr class="line-break">
                                 <p class="team-description">Нашиот тим, благодарение до подршката на Владата на Република Македонија и различни компании
                                     работи беспрекорно за да ви понуди најдобрите работи во странство. Ваша задача е да ја најдете омилената
@@ -173,15 +248,16 @@
                     <div class="text-center">
                         <i class="small">реализација</i>
                         <h3 class="members-overview-top">Подржувачи</h3>
+                        <hr class="line-break">
                         <br>
                         <br>
                     </div>
                     <div class="row text-center">
-                        <div class="col-md-6">
-                            <img src="img/vlada.jpg" width="300" >
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+                            <img src="img/vlada.jpg" class="img-responsive">
                         </div>
-                        <div class="col-md-6">
-                            <img src="img/wizz.jpg" width="200">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <img src="img/wizz.jpg" class="img-responsive">
                         </div>
 
                     </div>
@@ -200,19 +276,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="footer-text">DIGIT 2016</p>
+                <p class="footer-text"><strong>WORKabroad</strong> 2016</p>
             </div>
             <div class="col-md-6">
                 <ul class="footer-menu">
                     <li><a href="./about_us.html">За нас</a></li>
                     <li><a href="./advanced_search.html">Пребарување</a></li>
-                    <li><a href="./log_in.html">Најава</a></li>
-                    <li><a href="./register.html">Регистрација</a></li>
+                    <li class="login_register"><a href="./log_in.html">Најава</a></li>
+                    <li class="login_register"><a href="./register.html">Регистрација</a></li>
                 </ul>
                 <ul class="social-icons">
-                    <li><a href="www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                    <li><a href="www.facebook.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="www.facebook.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
 
@@ -227,6 +303,37 @@
 <script src="js/jquery.easy-autocomplete.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/team.js"></script>
+
+<script>
+    $(document).ready(function() {
+        localStorage.removeItem("country");
+
+        var userName = localStorage.getItem("userName");
+        if(userName !== null) {
+            document.getElementById("korisnickoIme1").textContent=userName;
+            $("#nav-others").show();
+            $("#nav-default").hide();
+            $(".login_register").hide()
+        }
+        else {
+            $("#nav-others").hide();
+            $("#nav-default").show();
+            $(".login_register").show()
+        }
+
+
+    });
+
+
+
+
+
+
+
+
+</script>
+
+
 
 </body>
 </html>
